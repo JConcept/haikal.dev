@@ -50,7 +50,15 @@
 					</div>-->
 				</div>
 				<style>
-				
+					#carouselIndex #ca-1{
+						background: url('./assets/img/caroussel (1).jpg') no-repeat center;
+					}
+					#carouselIndex #ca-2{
+						background: url('./assets/img/caroussel (2).jpg') no-repeat center;
+					}
+					#carouselIndex #ca-3{
+						background: url('./assets/img/caroussel (3).jpg') no-repeat center;
+					}
 				</style>
 			</div>
 			<a class="left carousel-control" href="#carouselIndex" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>

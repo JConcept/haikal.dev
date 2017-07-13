@@ -44,23 +44,50 @@
 									<li data-target="#carousel1" data-slide-to="0" class="active"></li>
 									<li data-target="#carousel1" data-slide-to="1" class=""></li>
 									<li data-target="#carousel1" data-slide-to="2" class=""></li>
+									<li data-target="#carousel1" data-slide-to="3" class=""></li>
+									<li data-target="#carousel1" data-slide-to="4" class=""></li>
+									<li data-target="#carousel1" data-slide-to="5" class=""></li>
+									<li data-target="#carousel1" data-slide-to="6" class=""></li>
+									<li data-target="#carousel1" data-slide-to="7" class=""></li>
+									<li data-target="#carousel1" data-slide-to="8" class=""></li>
 								</ol>
 								<div class="carousel-inner">
-									<div class="item active" id="ca-1">
-									</div>
-									<div class="item" id="ca-2">
-									</div>
-									<div class="item" id="ca-3">
-									</div>
+									<div class="item active" id="ca-1"></div>
+									<div class="item" id="ca-2"></div>
+									<div class="item" id="ca-3"></div>
+									<div class="item" id="ca-4"></div>
+									<div class="item" id="ca-5"></div>
+									<div class="item" id="ca-6"></div>
+									<div class="item" id="ca-7"></div>
+									<div class="item" id="ca-8"></div>
+									<div class="item" id="ca-9"></div>
 									<style>
 										#carousel1 #ca-1{
-											background: url('http://lorempixel.com/output/abstract-q-c-1000-400-1.jpg') no-repeat center;
+											background: url('./assets/img/couleurs/cramignons (1).jpg') no-repeat center;
 										}
 										#carousel1 #ca-2{
-											background: url('http://lorempixel.com/output/abstract-q-c-1000-400-3.jpg') no-repeat center;
+											background: url('./assets/img/couleurs/cramignons (2).jpg') no-repeat center;
 										}
 										#carousel1 #ca-3{
-											background: url('http://lorempixel.com/output/abstract-q-c-1000-400-4.jpg') no-repeat center;
+											background: url('./assets/img/couleurs/cramignons (3).jpg') no-repeat center;
+										}
+										#carousel1 #ca-4{
+											background: url('./assets/img/couleurs/cramignons (4).jpg') no-repeat center;
+										}
+										#carousel1 #ca-5{
+											background: url('./assets/img/couleurs/cramignons (5).jpg') no-repeat center;
+										}
+										#carousel1 #ca-6{
+											background: url('./assets/img/couleurs/cramignons (6).jpg') no-repeat center;
+										}
+										#carousel1 #ca-7{
+											background: url('./assets/img/couleurs/cramignons (7).jpg') no-repeat center;
+										}
+										#carousel1 #ca-8{
+											background: url('./assets/img/couleurs/cramignons (8).jpg') no-repeat center;
+										}
+										#carousel1 #ca-9{
+											background: url('./assets/img/couleurs/cramignons (9).jpg') no-repeat center;
 										}
 									</style>
 								</div>
@@ -80,23 +107,35 @@
 									<li data-target="#carousel2" data-slide-to="0" class="active"></li>
 									<li data-target="#carousel2" data-slide-to="1" class=""></li>
 									<li data-target="#carousel2" data-slide-to="2" class=""></li>
+									<li data-target="#carousel2" data-slide-to="3" class=""></li>
+									<li data-target="#carousel2" data-slide-to="4" class=""></li>
+									<li data-target="#carousel2" data-slide-to="5" class=""></li>
 								</ol>
 								<div class="carousel-inner">
-									<div class="item active" id="ca-1">
-									</div>
-									<div class="item" id="ca-2">
-									</div>
-									<div class="item" id="ca-3">
-									</div>
+									<div class="item active" id="ca-1"></div>
+									<div class="item" id="ca-2"></div>
+									<div class="item" id="ca-3"></div>
+									<div class="item" id="ca-4"></div>
+									<div class="item" id="ca-5"></div>
+									<div class="item" id="ca-6"></div>
 									<style>
 										#carousel2 #ca-1{
-											background: url('http://lorempixel.com/output/abstract-q-c-1000-400-5.jpg') no-repeat center;
+											background: url('./assets/img/couleurs/livres (1).jpg') no-repeat center;
 										}
 										#carousel2 #ca-2{
-											background: url('http://lorempixel.com/output/abstract-q-c-1000-400-6.jpg') no-repeat center;
+											background: url('./assets/img/couleurs/livres (2).jpg') no-repeat center;
 										}
 										#carousel2 #ca-3{
-											background: url('http://lorempixel.com/output/abstract-q-c-1000-400-7.jpg') no-repeat center;
+											background: url('./assets/img/couleurs/livres (3).jpg') no-repeat center;
+										}
+										#carousel2 #ca-4{
+											background: url('./assets/img/couleurs/livres (4).jpg') no-repeat center;
+										}
+										#carousel2 #ca-5{
+											background: url('./assets/img/couleurs/livres (5).jpg') no-repeat center;
+										}
+										#carousel2 #ca-6{
+											background: url('./assets/img/couleurs/livres (6).jpg') no-repeat center;
 										}
 									</style>
 								</div>
@@ -111,11 +150,11 @@
 							<h2>Titre 2</h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione consequatur tenetur sequi voluptatem reiciendis inventore laborum non aperiam quibusdam unde, laudantium at optio nihil. Optio quas quis eius illo ut.</p>
 							<!-- DÉBUT caroussel --> 
-							<div id="carousel2" class="carousel slide" data-ride="carousel">
+							<div id="carousel3" class="carousel slide" data-ride="carousel">
 								<ol class="carousel-indicators">
-									<li data-target="#carousel2" data-slide-to="0" class="active"></li>
-									<li data-target="#carousel2" data-slide-to="1" class=""></li>
-									<li data-target="#carousel2" data-slide-to="2" class=""></li>
+									<li data-target="#carousel3" data-slide-to="0" class="active"></li>
+									<li data-target="#carousel3" data-slide-to="1" class=""></li>
+									<li data-target="#carousel3" data-slide-to="2" class=""></li>
 								</ol>
 								<div class="carousel-inner">
 									<div class="item active" id="ca-1">
@@ -125,19 +164,19 @@
 									<div class="item" id="ca-3">
 									</div>
 									<style>
-										#carousel2 #ca-1{
+										#carousel3 #ca-1{
 											background: url('http://lorempixel.com/output/abstract-q-c-1000-400-5.jpg') no-repeat center;
 										}
-										#carousel2 #ca-2{
+										#carousel3 #ca-2{
 											background: url('http://lorempixel.com/output/abstract-q-c-1000-400-6.jpg') no-repeat center;
 										}
-										#carousel2 #ca-3{
+										#carousel3 #ca-3{
 											background: url('http://lorempixel.com/output/abstract-q-c-1000-400-7.jpg') no-repeat center;
 										}
 									</style>
 								</div>
-								<a class="left carousel-control" href="#carousel2" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-								<a class="right carousel-control" href="#carousel2" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+								<a class="left carousel-control" href="#carousel3" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+								<a class="right carousel-control" href="#carousel3" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 							</div>
 							<!-- FIN caroussel -->
 							<a href="" class="callToAction">En voir plus</a>
@@ -147,11 +186,11 @@
 							<h2>Titre 2</h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione consequatur tenetur sequi voluptatem reiciendis inventore laborum non aperiam quibusdam unde, laudantium at optio nihil. Optio quas quis eius illo ut.</p>
 							<!-- DÉBUT caroussel --> 
-							<div id="carousel2" class="carousel slide" data-ride="carousel">
+							<div id="carousel4" class="carousel slide" data-ride="carousel">
 								<ol class="carousel-indicators">
-									<li data-target="#carousel2" data-slide-to="0" class="active"></li>
-									<li data-target="#carousel2" data-slide-to="1" class=""></li>
-									<li data-target="#carousel2" data-slide-to="2" class=""></li>
+									<li data-target="#carousel4" data-slide-to="0" class="active"></li>
+									<li data-target="#carousel4" data-slide-to="1" class=""></li>
+									<li data-target="#carousel4" data-slide-to="2" class=""></li>
 								</ol>
 								<div class="carousel-inner">
 									<div class="item active" id="ca-1">
@@ -161,19 +200,19 @@
 									<div class="item" id="ca-3">
 									</div>
 									<style>
-										#carousel2 #ca-1{
+										#carousel4 #ca-1{
 											background: url('http://lorempixel.com/output/abstract-q-c-1000-400-5.jpg') no-repeat center;
 										}
-										#carousel2 #ca-2{
+										#carousel4 #ca-2{
 											background: url('http://lorempixel.com/output/abstract-q-c-1000-400-6.jpg') no-repeat center;
 										}
-										#carousel2 #ca-3{
+										#carousel4 #ca-3{
 											background: url('http://lorempixel.com/output/abstract-q-c-1000-400-7.jpg') no-repeat center;
 										}
 									</style>
 								</div>
-								<a class="left carousel-control" href="#carousel2" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-								<a class="right carousel-control" href="#carousel2" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+								<a class="left carousel-control" href="#carousel4" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+								<a class="right carousel-control" href="#carousel4" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 							</div>
 							<!-- FIN caroussel -->
 							<a href="" class="callToAction">En voir plus</a>
@@ -186,6 +225,13 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione consequatur tenetur sequi voluptatem reiciendis inventore laborum non aperiam quibusdam unde, laudantium at optio nihil. Optio quas quis eius illo ut.</p>
 							<!-- DÉBUT caroussel --> 
 							<div id="carousel5" class="carousel slide" data-ride="carousel">
+								<ol class="carousel-indicators">
+									<li data-target="#carousel5" data-slide-to="0" class="active"></li>
+									<li data-target="#carousel5" data-slide-to="1" class=""></li>
+									<li data-target="#carousel5" data-slide-to="2" class=""></li>
+									<li data-target="#carousel5" data-slide-to="3" class=""></li>
+									<li data-target="#carousel5" data-slide-to="4" class=""></li>
+								</ol>
 								<div class="carousel-inner">
 									<div class="item active" id="ca-1">
 									</div>
