@@ -424,18 +424,7 @@ a.callToAction:hover{
         #index #carouselIndex{
             margin: -10px;
         }
-        #index #carouselIndex .item{
-            background-size: cover !important;
-        }
-        #index #carouselIndex #ca-1{
-            background: url('../img/caroussel (1).jpg') no-repeat center center;
-        }
-        #index #carouselIndex #ca-2{
-            background: url('../img/caroussel (2).jpg') no-repeat center center;
-        }
-        #index #carouselIndex #ca-3{
-            background: url('../img/caroussel (3).jpg') no-repeat center center;
-        }
+         
     /*Présentation*/
         #index #presentation{
             max-width: 1100px;
