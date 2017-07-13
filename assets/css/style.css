@@ -747,6 +747,7 @@ a.callToAction:hover{
                 right: 0;
                 background: transparent;
                 z-index: 10;
+                cursor: pointer;
             }
             .wrapper .column h2{
                 color: #FFFFFF;
@@ -754,20 +755,26 @@ a.callToAction:hover{
                 text-align: center;
             }
             .wrapper .column .more{
+                position: relative;
                 display: block;
                 width: 50px;
                 height: 50px;
                 margin: 0 auto;
                 padding: 0;
                 border-radius: 100%;
-                border: 1px solid #FFFFFF; /* 2196F3 */
+                border: 4px solid #FFFFFF; /* 2196F3 */
                 z-index: 100;
+                /* text-align: center; */
             }
             .wrapper .column .more:after{
                 content: "+";
                 color: #FFFFFF;
                 text-align: center;
                 font-size: 50px;
+                position: absolute;
+                top: -13px;
+                left: 6px;
+
             }
             /* PROVISOIRE /!\ */
             .wrapper .column{
