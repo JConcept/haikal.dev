@@ -1,6 +1,12 @@
 <?php 
+	$path = $_SERVER['PHP_SELF']; /* @fail : faille de sécurité en attaque XSS ? */
+  	$file = basename ($path); 
+
+    $reg = '#^\..*$#';
+    $onestla = preg_replace($reg, '$2', $file);
+	echo $onestla; 
     $title = "titre";
-?>
+?> 
 <!DOCTYPE html>
 <html lang="fr">
 <head>
