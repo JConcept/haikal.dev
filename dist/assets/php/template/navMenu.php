@@ -13,7 +13,7 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li id="nav-index" class="active"><a href="./index.php">Accueil<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+				<li id="nav-index" class="active"><a href="./accueil.php">Accueil<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
 				<li id="nav-galerie" class="dropdown">
 					<a href="./galerie.php" class="dropdown-toggle" data-toggle="dropdown">Galerie <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-th-large"></span></a><!-- book -->
 					<ul class="dropdown-menu forAnimate" role="menu">
@@ -26,12 +26,12 @@
 				</li>
 				<li id="nav-exposition"><a href="./expositions.php">Expositions<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-blackboard"></span></a></li>
 				<li id="nav-biographie"><a href="./biographie.php">Biographie<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-education"></span></a></li>
-				<li id="nav-"><a href="#">Articles<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-text-background"></span></a></li>
+				<!--<li id="nav-"><a href="#">Articles<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-text-background"></span></a></li>
 				<li id="nav-"><a href="#">Ateliers<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-th-list"></span></a></li>
-				<li id="nav-contact"><a href="./contact.php">Contact<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-envelope"></span></a></li>
-				<li id="nav-"><a href="#">Liens<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-globe"></span></a></li>
-				<li id="nav-"><a href="#">Presse<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-book"><!--list-alt--></span></a></li>
-				<li id="nav-"><a href="#">Partager<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-share"></span></a></li>
+				--><li id="nav-contact"><a href="./contact.php">Contact<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-envelope"></span></a></li>
+				<!--<li id="nav-"><a href="#">Liens<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-globe"></span></a></li>
+				<li id="nav-"><a href="#">Presse<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-book">--><!--list-alt--><!--</span></a></li>
+				<li id="nav-"><a href="#">Partager<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-share"></span></a></li>-->
 				<!--<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-cog"></span></a>
 					<ul class="dropdown-menu forAnimate" role="menu">
