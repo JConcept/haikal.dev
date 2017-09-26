@@ -77,7 +77,7 @@
 						Depuis 2016 en association de fait  avec un collectif d’artistes « MEzZe ».<br>
 						<span class="callToAction">
 							<a href="./peintures.php">Voir mes peintures</a>
-							<a href="">En savoir plus</a>
+							<a href="./biographie.php">En savoir plus</a>
 						</span>
 					</p>
 					<div id="social-link">

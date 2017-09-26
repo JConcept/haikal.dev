@@ -1,0 +1,26 @@
+{
+  "name": "haikal.dev",
+  "version": "1.0.0",
+  "description": "Ce projet est réalisé pour une cliente de [JConcept.be](https://JConcept.be). La base du projet a été initiée lors de la Coding Week organisé par la coding school : [Molengeek Bruxelles](http://molengeek.com).  \r `Ce travail a été poursuivit lors de ma formation à la Molengeek.`",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "bootstrap-sass": "^3.3.7",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^2.7.0"
+  }
+}
