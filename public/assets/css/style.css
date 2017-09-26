@@ -1,0 +1,912 @@
+@charset "UTF8";
+
+
+/*************/
+/*  GENERAL  */
+/*************/
+@import url('https://fonts.googleapis.com/css?family=Overpass:300,400,700,900');
+body{
+    background-color: #EEEEEE;
+    overflow-x: hidden;
+    font-family: 'Overpass', sans-serif;
+}
+h1{
+    margin-top: 35px;
+    text-align: center;
+    font-weight: 900;
+    color: #D11919;
+}
+h2{
+    font-weight: 700;
+    color: #2196F3;
+}
+.clear{
+    clear: both;
+}
+.hidden{
+    display:none;
+}
+.callToAction a,
+a.callToAction{
+    display: block;
+    width: 100%;
+    max-width: 190px;
+    padding: 6px 20px;
+    margin: 10px auto;
+    border-radius: 25px;
+    background-color: #2196F3;
+    font-weight: bolder;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid #2196F3;
+}
+span.callToAction, /* Dans le cas des deux boutons */
+div.callToAction{
+    display: flex;
+    justify-content: space-around;
+}
+span.callToAction a,
+div.callToAction a{
+    margin: 10px;
+}
+@media (max-width:420px) {
+    span.callToAction,
+    div.callToAction{
+        flex-direction: column;
+    }       
+    span.callToAction a,
+    div.callToAction a{
+        width: 100%;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}
+.callToAction a:hover,
+a.callToAction:hover{
+    background-color: #FFFFFF;
+    color: #2196F3;
+}
+/* DÉBUT Navbar */
+    body,html{
+		height: 100%;
+	}
+
+	/* remove outer padding */
+	.main .row{
+		padding: 0px;
+		margin: 0px;
+	}
+
+	/*Remove rounded coners*/
+
+	nav.sidebar.navbar {
+		border-radius: 0px;
+	}
+
+	nav.sidebar, .main{
+		-webkit-transition: margin 200ms ease-out;
+	    -moz-transition: margin 200ms ease-out;
+	    -o-transition: margin 200ms ease-out;
+	    transition: margin 200ms ease-out;
+	}
+
+	/* Add gap to nav and right windows.*/
+	.main{
+		padding: 10px 10px 0 10px;
+	}
+
+	/* .....NavBar: Icon only with coloring/layout.....*/
+
+	/*small/medium side display*/
+	@media (min-width: 768px) {
+
+		/*Allow main to be next to Nav*/
+		.main{
+			position: absolute;
+			width: calc(100% - 40px); /*keeps 100% minus nav size*/
+			margin-left: 40px;
+			float: right;
+		}
+
+		/*lets nav bar to be showed on mouseover*/
+		nav.sidebar:hover + .main{
+			margin-left: 200px;
+		}
+
+		/*Center Brand*/
+		nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+			margin-left: 0px;
+		}
+		/*Center Brand*/
+		nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
+			text-align: center;
+			width: 100%;
+			margin-left: 0px;
+		}
+
+		/*Center Icons*/
+		nav.sidebar a{
+			padding-right: 13px;
+		}
+
+		/*adds border top to first nav box */
+		nav.sidebar .navbar-nav > li:first-child{
+			border-top: 1px #e5e5e5 solid;
+		}
+
+		/*adds border to bottom nav boxes*/
+		nav.sidebar .navbar-nav > li{
+			border-bottom: 1px #e5e5e5 solid;
+		}
+
+		/* Colors/style dropdown box*/
+		nav.sidebar .navbar-nav .open .dropdown-menu {
+			position: static;
+			float: none;
+			width: auto;
+			margin-top: 0;
+			background-color: transparent;
+			border: 0;
+			-webkit-box-shadow: none;
+			box-shadow: none;
+		}
+
+		/*allows nav box to use 100% width*/
+		nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
+			padding: 0 0px 0 0px;
+		}
+
+		/*colors dropdown box text */
+		.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+			color: #777;
+		}
+
+		/*gives sidebar width/height*/
+		nav.sidebar{
+			width: 200px;
+			height: 100%;
+			margin-left: -160px;
+			float: left;
+			z-index: 8000;
+			margin-bottom: 0px;
+		}
+
+		/*give sidebar 100% width;*/
+		nav.sidebar li {
+			width: 100%;
+		}
+
+		/* Move nav to full on mouse over*/
+		nav.sidebar:hover{
+			margin-left: 0px;
+		}
+		/*for hiden things when navbar hidden*/
+		.forAnimate{
+			opacity: 0;
+		}
+	}
+
+	/* .....NavBar: Fully showing nav bar..... */
+
+	@media (min-width: 1330px) {
+
+		/*Allow main to be next to Nav*/
+		.main{
+			width: calc(100% - 200px); /*keeps 100% minus nav size*/
+			margin-left: 200px;
+		}
+
+		/*Show all nav*/
+		nav.sidebar{
+			margin-left: 0px;
+			float: left;
+		}
+		/*Show hidden items on nav*/
+		nav.sidebar .forAnimate{
+			opacity: 1;
+		}
+	}
+
+    #menu{
+        position: fixed;
+        /*overflow-x: scroll;
+        overflow-y: hidden;
+        overflow: auto;*/
+    }
+
+    #menu .dropdown-menu.forAnimate a span{   
+        margin: 0 20px 0 23px;
+    }
+
+	nav.sidebar .navbar-nav .open .dropdown-menu>li>a:hover, nav.sidebar .navbar-nav .open .dropdown-menu>li>a:focus {
+		color: #CCC;
+		background-color: transparent;
+	}
+
+	nav:hover .forAnimate{
+		opacity: 1;
+	}
+
+    @media (max-width:768px) {
+        #menu{
+            position: initial;
+        }
+    }
+/* FIN Navbar */
+
+/* DÉBUT logo *//*
+    #page-header{
+        position: relative;
+        display: block;
+        height: 170px;
+        margin: -10px;
+        text-align: center;
+    }
+    @media (max-width:768px) {
+        #page-header{
+            height: 200px;
+            margin: -30px;
+        }        
+    }
+    #Nelly-Haikal{
+        position: absolute;
+        color: #FFFFFF;
+        font-size: 33px;
+        left: 0px;
+        right: 0;
+        top: 49px;
+    }*/
+
+    
+    /*#page-header{
+        position: relative;
+        display: block;
+        height: 142px;
+        width: 100%;
+        margin: -30px 0;
+        z-index: 1000;
+        text-align: center;*/
+        /*
+        height: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: -20px 0;*/
+        /*width: 100%;*/
+    /*}
+    #header-logo{
+        display: inline-block;
+        width: 252px;
+        margin: 0 auto;
+    }
+    @media (min-width:768px) {
+        #header-logo{
+            position: fixed;
+            margin: 20px 0;
+            *//*height: 0;*/
+            /*height: 142px;*/
+            /*width: 100%;*//*
+        }        
+    }
+    #Nelly-Haikal{
+        position: absolute;
+        color: #FFFFFF;
+        font-size: 33px;
+        left: 0px;
+        right: 0;
+        top: 49px;
+    }*/
+
+    #head-container{
+        height: 142px;
+        position: relative;
+        margin: -10px;
+    }
+    #container-logo{
+        display: inline-block;
+        height: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: -20px 0;
+        /*width: 100%;*/
+        z-index: 1000;
+        text-align: center;
+    }
+    #header-logo{
+        display: inline-block;
+        width: 252px;
+        margin: 0 auto;
+    }
+    @media (min-width:768px) {
+        #container-logo{
+            position: fixed;
+            margin: 0;
+        }        
+    }
+    #Nelly-Haikal{
+        position: absolute;
+        color: #FFFFFF;
+        font-size: 33px;
+        left: 0px;
+        right: 0;
+        top: 49px;
+    }
+/* FIN logo */
+
+/* DÉBUT footer */
+    footer{
+        background-color: #231F20;
+        color: white;
+        text-align: center;
+        margin: 0 -10px;
+    }
+    footer p{
+        display: inline;
+    }
+    footer .footer-bckg{
+        height: 30px;
+        background: radial-gradient( 400px at 50% 99px , hsla(1, 83%, 66%, 1) 17%, #D11919 84%);
+        margin-bottom: 0px;
+        margin-top: 8px;
+    }
+    footer .footer-bckg.small{
+        height: 10px;
+        margin-bottom: 8px;
+    }
+    footer .float-rigth{
+        float: right;
+        margin-right: 10px;
+    }
+    footer a{
+        color: #2196F3;
+    }
+/* FIN footer */
+
+/* DÉBUT carousel */
+    #carousel1,
+    #carousel2, 
+    #carousel3, 
+    #carousel4, 
+    #carousel5, 
+    #carousel6, 
+    #carousel7, 
+    #carousel8{
+        width: 100%;
+        height: 200px;
+    }
+    #carousel1 .carousel-inner div,
+    #carousel2 .carousel-inner div, 
+    #carousel3 .carousel-inner div, 
+    #carousel4 .carousel-inner div, 
+    #carousel5 .carousel-inner div, 
+    #carousel6 .carousel-inner div, 
+    #carousel7 .carousel-inner div, 
+    #carousel8 .carousel-inner div{
+        height: 200px;
+        background-size: cover !important;
+    }
+/* FIN carousel */
+
+/*************/
+/*   INDEX   */
+/*************/
+    /*Menu Nav*/
+        #index #menu{
+            margin-bottom: 0;
+        }
+    /*Logo*/
+    #index #page-header{
+        /*height: 170px;*/
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        text-align: center;
+        z-index: 100;
+    }
+    /*#Nelly-Haikal{
+        position: absolute;
+        color: #FFFFFF;
+        font-size: 33px;
+        left: 0px;
+        right: 0;
+        top: 49px;
+    }*/
+    /* DÉBUT carousel */
+        #index #carouselIndex .carousel-inner div{
+            height: 400px;
+        }
+        #index #carouselIndex{
+            margin: -10px;
+        }
+         
+    /*Présentation*/
+        #index #presentation{
+            max-width: 1100px;
+            margin: 60px auto;
+        }
+        #index #presentation-content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #index #presentation h1{
+            margin: 80px 60% 20px 20%;
+        }
+        #index #presentation #artiste{
+            float: right;
+            width: 180px;
+            height: auto;
+            border-radius: 100%;
+        }
+        #index #presentation p{
+            display: inline-block;
+            max-width: 743px;
+            width: 70%;
+        }
+        #presentation-content p img{
+            margin: 10px;
+        }
+        #index #presentation .callToAction a{
+            min-width: 170px;
+        }
+        #index #presentation-content #social-link{
+            width: 20%;
+            display: flex;
+            justify-content: space-around;
+            align-items: stretch;
+            margin: 15px;
+        }
+        #index #presentation-content #social-link a{
+            margin: 15px;
+        }
+        @media (max-width:860px) {
+            #index #presentation-content #social-link{
+                flex-direction: column;
+            }
+        }
+        @media (max-width:693px) {
+            #index #presentation-content #social-link{
+                flex-direction: column;
+            }
+        }
+        @media (max-width:480px) {
+            #index #presentation #artiste{
+                width: 100%;
+            }
+        }
+        
+/**************/
+/*   PHOTOS   */
+/**************/
+
+/*****************/
+/*   PEINTURES   */
+/*****************/
+    /* Disposition photos 
+    .mosaicflow__column {
+        float: left;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .mosaicflow__item {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .mosaicflow__item img {
+        display: block;
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }*/
+    /*OLD*/
+        .wrapper {
+        width: 100%;
+        position: relative;
+        /*background-color: #fff;*/
+        }
+        .wrapper:after {
+        padding-top: 42.85714285714287%;
+        display: block;
+        content: '';
+        }
+        .wrapper .column {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 14.2857142857142857%;
+        float: left;
+        padding: 6px;
+        box-sizing: border-box;
+        }
+        .wrapper .column .inner {
+        width: 100%;
+        position: relative;
+        }
+        .wrapper .column .inner:after {
+        padding-top: 100%;
+        /* ratio 1:1 */
+        display: block;
+        content: '';
+        }
+        .wrapper .column .inner:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        -webkit-transition: 300ms ease-in-out;
+        transition: 300ms ease-in-out;
+        background-color: rgba(33, 150, 253, 0);
+        }
+        .wrapper .column:hover .hover{
+            display: inline-block;
+        }
+        .wrapper .column:nth-child(1) {
+        width: 28.5714285714285714%;
+        }
+        .wrapper .column:nth-child(2) {
+        left: 28.5714285714285714%;
+        }
+        .wrapper .column:nth-child(3) {
+        left: 28.5714285714285714%;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        }
+        .wrapper .column:nth-child(4) {
+        width: 28.5714285714285714%;
+        left: 42.85714285714286%;
+        top: 0;
+        }
+        .wrapper .column:nth-child(4) .inner:after {
+        padding-top: 48.7%;
+        }
+        .wrapper .column:nth-child(5) {
+        left: 71.42857142857143%;
+        top: 0;
+        }
+        .wrapper .column:nth-child(6) {
+        left: auto;
+        right: 0;
+        top: 0;
+        }
+        .wrapper .column:nth-child(7) {
+        left: 71.42857142857143%;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        }
+        .wrapper .column:nth-child(8) {
+        left: auto;
+        right: 0;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        }
+        .wrapper .column:nth-child(9) {
+        width: 28.5714285714285714%;
+        top: auto;
+        left: 0;
+        bottom: 0;
+        }
+        .wrapper .column:nth-child(9) .inner:after {
+        padding-top: 48.7%;
+        }
+        .wrapper .column:nth-child(10) {
+        left: 28.5714285714285714%;
+        top: auto;
+        bottom: 0;
+        }
+        .wrapper .column:nth-child(11) {
+        left: 42.85714285714286%;
+        top: auto;
+        bottom: 0;
+        width: 28.5714285714285714%;
+        }
+        .wrapper .column:nth-child(12) {
+        left: auto;
+        top: auto;
+        bottom: 0;
+        right: 0;
+        width: 28.5714285714285714%;
+        }
+        .wrapper .column:nth-child(12) .inner:after {
+        padding-top: 48.7%;
+        }
+        /* BEAUTY */
+        body,
+        html {
+        /*background-color: #fff;*/
+        padding: 0;
+        }
+        .wrapper .column .inner {
+        background-size: cover;
+        background-position: center;
+        }
+        #paysage .wrapper .column:nth-child(1) .inner {
+        background-image: url('../img/peintures/tableau (1).jpg');
+        }
+        #paysage .wrapper .column:nth-child(2) .inner {
+        background-image: url('../img/peintures/tableau (2).jpg');
+        }
+        #paysage .wrapper .column:nth-child(3) .inner {
+        background-image: url('../img/peintures/tableau (3).jpg');
+        }
+        #paysage .wrapper .column:nth-child(4) .inner {
+        background-image: url('../img/peintures/tableau (4).jpg');
+        }
+        #paysage .wrapper .column:nth-child(5) .inner {
+        background-image: url('../img/peintures/tableau (5).jpg');
+        }
+        #paysage .wrapper .column:nth-child(6) .inner {
+        background-image: url('../img/peintures/tableau (6).jpg');
+        }
+        #paysage .wrapper .column:nth-child(7) .inner {
+        background-image: url('../img/peintures/tableau (7).jpg');
+        }
+        #paysage .wrapper .column:nth-child(8) .inner {
+        background-image: url('../img/peintures/tableau (8).jpg');
+        }
+        #paysage .wrapper .column:nth-child(9) .inner {
+        background-image: url('../img/peintures/tableau (9).jpg');
+        }
+        #paysage .wrapper .column:nth-child(10) .inner {
+        background-image: url('../img/peintures/tableau (10).jpg');
+        }
+        #paysage .wrapper .column:nth-child(11) .inner {
+        background-image: url('../img/peintures/tableau (11).jpg');
+        }
+        #paysage .wrapper .column:nth-child(12) .inner {
+        background-image: url('../img/peintures/tableau (12).jpg');
+        }
+        #paysage .wrapper .column:nth-child(13) .inner {
+        background-image: url('../img/peintures/tableau (13).jpg');
+        }
+
+
+        /*second tab*/
+        
+        
+        #portrait .wrapper .column:nth-child(1) .inner {
+        background-image: url('https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11055800_1556880671238497_1776548525_n.jpg');
+        }
+        #portrait .wrapper .column:nth-child(2) .inner {
+        background-image: url('https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11055816_932624596782983_529466754_n.jpg');
+        }
+        #portrait .wrapper .column:nth-child(3) .inner {
+        background-image: url('https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11008257_1569363026647030_933015336_n.jpg');
+        }
+        #portrait .wrapper .column:nth-child(4) .inner {
+        background-image: url('https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11056045_436886419818172_768672462_n.jpg');
+        }
+        #portrait .wrapper .column:nth-child(5) .inner {
+        background-image: url('https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11049260_1374759412847590_258656935_n.jpg');
+        }
+        #portrait .wrapper .column:nth-child(6) .inner {
+        background-image: url('https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11005276_1414641038838035_1026684390_n.jpg');
+        }
+        #portrait .wrapper .column:nth-child(7) .inner {
+        background-image: url('https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11032879_730451393737672_1900382729_n.jpg');
+        }
+        #portrait .wrapper .column:nth-child(8) .inner {
+        background-image: url('https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11008309_1069768239717639_19410808_n.jpg');
+        }
+        #portrait .wrapper .column:nth-child(9) .inner {
+        background-image: url('https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/10919595_795737697170495_727510522_n.jpg');
+        }
+        #portrait .wrapper .column:nth-child(10) .inner {
+        background-image: url('https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11005073_763217610443223_1974563188_n.jpg');
+        }
+        #portrait .wrapper .column:nth-child(11) .inner {
+        background-image: url('https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/10903752_533893980082103_132962602_n.jpg');
+        }
+        #portrait .wrapper .column:nth-child(12) .inner {
+        background-image: url('https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xap1/t51.2885-15/10483464_355418301328333_1012884493_n.jpg');
+        }
+        #portrait .wrapper .column:nth-child(13) .inner {
+        background-image: url('https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xap1/t51.2885-15/10483455_592335754230795_537719826_n.jpg');
+        }
+
+        /* DÉBUT CUSTOM */            
+            /* réglage hover */
+            .wrapper .column:hover::before {
+                position: absolute;
+                display: block;
+                /*top: 0;
+                left: 0;
+                right: 0;*/
+                height: 100%;
+                width: 100%;
+                content: "";
+                background-color: rgba(33, 150, 253, 0.63);
+                cursor: pointer;
+                z-index: 2;
+            }
+            /* réglage insertion de texte */
+            .wrapper .column .hover{
+                margin-top: 50px;
+                position: absolute;
+                display: none;
+                top: 0;
+                left: 0;
+                right: 0;
+                background: transparent;
+                z-index: 10;
+                cursor: pointer;
+            }
+            .wrapper .column h2{
+                color: #FFFFFF;
+                z-index: 100;
+                text-align: center;
+            }
+            .wrapper .column .more{
+                position: relative;
+                display: block;
+                width: 50px;
+                height: 50px;
+                margin: 0 auto;
+                padding: 0;
+                border-radius: 100%;
+                border: 4px solid #FFFFFF; /* 2196F3 */
+                z-index: 100;
+                /* text-align: center; */
+            }
+            .wrapper .column .more:after{
+                content: "+";
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 50px;
+                position: absolute;
+                top: -13px;
+                left: 6px;
+
+            }
+            /* PROVISOIRE /!\ */
+            .wrapper .column{
+                padding: 0;
+            }
+        /* FIN CUSTOM */
+        /* END */
+
+
+
+
+/**************/
+/*   AGENDA   */
+/**************/
+    .agenda{
+        max-width: 800px;
+        margin: 40px auto 0;
+
+    }
+    .agenda .table-bordered thead tr th,
+    .agenda .table-bordered tbody tr td,
+    .agenda .table-bordered{
+        border-color: #2196F3;
+    }
+    .agenda .table-bordered thead tr th,
+    .agenda .dayofmonth{
+        color: #2196F3;
+    }
+    .agenda .agenda-date { width: 170px; }
+    .agenda .agenda-date .dayofmonth {
+        width: 40px;
+        font-size: 36px;
+        line-height: 36px;
+        float: left;
+        text-align: right;
+        margin-right: 10px; 
+    }
+    .agenda .agenda-date .shortdate {
+        font-size: 0.75em; 
+    }
+
+    /* Times */
+    .agenda .agenda-time { 
+        width: 140px; 
+    } 
+
+/******************/
+/*   BIOGRAPHIE   */
+/******************/
+        #biographie h2{
+            text-align: center;
+        }
+        #biographie section{
+            max-width: 745px;
+            margin: 60px auto;
+        }
+        /*#biographie #presentation-content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }*/
+        #biographie #presentation #artiste{
+            float: right;
+            width: 180px;
+            height: auto;
+            border-radius: 100%;
+        }
+        #biographie #presentation p{
+            display: inline-block;
+            /*max-width: 743px;*/
+            /*width: 70%;*/
+        }
+        #presentation-content p img{
+            margin: 10px;
+        }
+        @media (max-width:480px) {
+            #biographie #presentation #artiste{
+                width: 100%;
+            }
+        }
+        #biographie #artiste2{
+            float: left;
+            margin: 15px 10px 10px 0px;
+        }
+
+
+/******************/
+/*   BIOGRAPHIE   */
+/******************/
+    #contact form{
+        max-width: 745px;
+        margin: 0 auto;
+    }
+    #contact form .btn.btn-primary{
+        width: 100%;
+        margin-bottom: 10px;
+        background-color: #2196F3;
+        border-color: #2196F3;
+    }
+
+
+/* GRAND écran */
+    @media (min-width:775px) {
+        #index #carouselIndex .carousel-inner div{
+            height: 600px;
+        }
+    }
+    @media (min-width:1135px) {
+        body{
+            font-size: 16px;
+        }
+        .callToAction a,
+        a.callToAction{
+            //max-width: 190px;
+        }
+        #index #carouselIndex .carousel-inner div{
+            height: 800px;
+        }
+    }
+    @media (min-width:1600px) {
+        #index #carouselIndex .carousel-inner div{
+            height: 900px;
+        }
+    }
+    /*@media (min-width:1900px) {
+        #index #carouselIndex .carousel-inner div{
+            height: 1200px;
+        }
+    }
+    @media (min-width:2400px) {
+        #index #carouselIndex .carousel-inner div{
+            height: 1600px;
+        }
+    }*/
