@@ -177,7 +177,6 @@
 	<?php
         include_once("./assets/php/template/loadLibJS.php");
     ?>
-	<script src="./vendor/jquery.mosaicflow/jquery.mosaicflow.min.js"></script>
 	<script>
 		$(document).ready(function () {
 			$(".nav li").removeClass("active");
