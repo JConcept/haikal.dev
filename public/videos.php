@@ -1,10 +1,10 @@
 <?php
-    include_once("./assets/php/template/htmlTemplateHeader.php");
+	include_once("./assets/php/template/htmlTemplateHeader.php");
 ?>
-<body id="photos">
+<body id="videos">
 		<?php
-            include_once("./assets/php/template/navMenu.php");
-        ?>		
+			include_once("./assets/php/template/navMenu.php");
+		?>		
 	<div class="main">
 		<div id="head-container"> 
 			<?php
@@ -12,40 +12,42 @@
 			?>
 		</div>	
 
-	    <h1 role="heading" aria-level="1">Photos</h1>
-		<form method="get" action="" class="btn-group">
-			<!--<label for="" class="dropdown-menu" ></label>-->
-			<select name="photos" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				<option value="#couleur">couleur</option>
-				<option value="#noir-blanc">noir et blanc</option>
-				<!--<span class="caret"></span>-->
-			</select>
-		</form>
+		<section>
+			<h2 role="heading" aria-level="2">Photos</h2>
+				<form method="get" action="" class="btn-group">
+					<!--<label for="" class="dropdown-menu" ></label>-->
+					<select name="photos" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<option value="#couleur">couleur</option>
+						<option value="#noir-blanc">noir et blanc</option>
+						<!--<span class="caret"></span>-->
+					</select>
+				</form>
+				
+				<!-- DÉBUT caroussel --> 
+				<div id="carousel-a" class="carousel slide carousel-sync" data-ride="carousel" data-pause="true">
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="http://lorempixel.com/output/abstract-q-c-300-200-1.jpg">
+						</div>
+						<div class="item">
+							<img src="http://lorempixel.com/output/abstract-q-c-300-200-2.jpg">
+						</div>
+						<div class="item">
+							<img src="http://lorempixel.com/output/abstract-q-c-300-200-3.jpg">
+						</div>
+						<div class="item">
+							<img src="http://lorempixel.com/output/abstract-q-c-300-200-4.jpg">
+						</div>
+					</div>
 		
-		<!-- DÉBUT caroussel --> 
-		<div id="carousel-a" class="carousel slide carousel-sync" data-ride="carousel" data-pause="true">
-			<div class="carousel-inner">
-				<div class="item active">
-					<img src="http://lorempixel.com/output/abstract-q-c-300-200-1.jpg">
+					<a class="left carousel-control" href="#carousel-a" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+					<a class="right carousel-control" href="#carousel-a" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>
 				</div>
-				<div class="item">
-					<img src="http://lorempixel.com/output/abstract-q-c-300-200-2.jpg">
-				</div>
-				<div class="item">
-					<img src="http://lorempixel.com/output/abstract-q-c-300-200-3.jpg">
-				</div>
-				<div class="item">
-					<img src="http://lorempixel.com/output/abstract-q-c-300-200-4.jpg">
-				</div>
-			</div>
-
-			<a class="left carousel-control" href="#carousel-a" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left"></span>
-			</a>
-			<a class="right carousel-control" href="#carousel-a" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right"></span>
-			</a>
-		</div>
+		</section>
 		<!-- FIN caroussel -->
 
 		<!-- DÉBUT caroussel 
@@ -62,9 +64,9 @@
 				</div>
 				<div class="item" id="ca-3">
 				</div>
-                <style>
-                    /* style pour insérer les background OU utiliser jQuery ? */
-                </style>
+				<style>
+					/* style pour insérer les background OU utiliser jQuery ? */
+				</style>
 			</div>
 			<a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
 			<a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -73,13 +75,19 @@
 
 		<!-- DÉBUT section  -->
 
-        <?php
-            include_once("./assets/php/template/footer.php");
-        ?>
+		<?php
+			include_once("./assets/php/template/footer.php");
+		?>
 
 	</div>
 	<?php
-        include_once("./assets/php/template/loadLibJS.php");
-    ?>
+		include_once("./assets/php/template/loadLibJS.php");
+	?>
+	<script>
+		$(document).ready(function () {
+			$('#nav-galerie').addClass('active');
+			$('#nav-videos a').addClass('active');
+		});
+	</script>
 </body>
 </html>

@@ -15,9 +15,9 @@
         border-color: darken($border, 25%);
   }
   &:hover {
-    color: $color;
-    background-color: darken($background, 10%);
-        border-color: darken($border, 12%);
+    color: $background;
+    background-color: #FFFFFF;
+        border-color: $border;
   }
   &:active,
   &.active,

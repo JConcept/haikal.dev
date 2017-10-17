@@ -1,10 +1,10 @@
 <?php
-    include_once("./assets/php/template/htmlTemplateHeader.php");
+	include_once("./assets/php/template/htmlTemplateHeader.php");
 ?>
 <body id="peintures">
 		<?php
-            include_once("./assets/php/template/navMenu.php");
-        ?>		
+			include_once("./assets/php/template/navMenu.php");
+		?>		
 	<div class="main">
 		<div id="head-container"> 
 			<?php
@@ -12,11 +12,10 @@
 			?>
 		</div>	
 
-	    <h1 role="heading" aria-level="1">Peintures</h1>
-		
 		<!-- DÉBUT section  -->
-
 		<section>
+		<h2 role="heading" aria-level="2">Peintures</h2>
+		
 			<div role="tabpanel">
 				<!-- Nav tabs -->
 				<ul class="nav nav-tabs" role="tablist">
@@ -37,83 +36,83 @@
 								<div class="inner"></div>
 								<div class="hover">			
 									<div class="more"></div>
-									<h2>Titre 1</h2>		
+									<h3>Titre 1</h3>		
 								</div>
 							</div>
 							<div class="column">
 								<div class="hover">			
 									<div class="more"></div>
-									<h2>Titre 2</h2>
-								</div>
-								<div class="inner"></div>
-							</div>
-							<div class="column">
-								<div class="hover">			
-									<div class="more"></div>
-									<h2>Titre 3</h2>			
+									<h3>Titre 2</h3>
 								</div>
 								<div class="inner"></div>
 							</div>
 							<div class="column">
 								<div class="hover">			
 									<div class="more"></div>
-									<h2>Titre X</h2>			
+									<h3>Titre 3</h3>			
 								</div>
 								<div class="inner"></div>
 							</div>
 							<div class="column">
 								<div class="hover">			
 									<div class="more"></div>
-									<h2>Titre X</h2>			
+									<h3>Titre X</h3>			
 								</div>
 								<div class="inner"></div>
 							</div>
 							<div class="column">
 								<div class="hover">			
 									<div class="more"></div>
-									<h2>Titre X</h2>			
+									<h3>Titre X</h3>			
 								</div>
 								<div class="inner"></div>
 							</div>
 							<div class="column">
 								<div class="hover">			
 									<div class="more"></div>
-									<h2>Titre X</h2>			
+									<h3>Titre X</h3>			
 								</div>
 								<div class="inner"></div>
 							</div>
 							<div class="column">
 								<div class="hover">			
 									<div class="more"></div>
-									<h2>Titre X</h2>			
+									<h3>Titre X</h3>			
 								</div>
 								<div class="inner"></div>
 							</div>
 							<div class="column">
 								<div class="hover">			
 									<div class="more"></div>
-									<h2>Titre X</h2>			
+									<h3>Titre X</h3>			
 								</div>
 								<div class="inner"></div>
 							</div>
 							<div class="column">
 								<div class="hover">			
 									<div class="more"></div>
-									<h2>Titre X</h2>			
+									<h3>Titre X</h3>			
 								</div>
 								<div class="inner"></div>
 							</div>
 							<div class="column">
 								<div class="hover">			
 									<div class="more"></div>
-									<h2>Titre X</h2>			
+									<h3>Titre X</h3>			
 								</div>
 								<div class="inner"></div>
 							</div>
 							<div class="column">
 								<div class="hover">			
 									<div class="more"></div>
-									<h2>Titre X</h2>			
+									<h3>Titre X</h3>			
+								</div>
+								<div class="inner"></div>
+							</div>
+							<div class="column">
+								<div class="hover">			
+									<div class="more"></div>
+									<h3>Titre X</h3>			
 								</div>
 								<div class="inner"></div>
 							</div>
@@ -169,19 +168,18 @@
 
 		<!-- FIN section  -->
 
-        <?php
-            include_once("./assets/php/template/footer.php");
-        ?>
+		<?php
+			include_once("./assets/php/template/footer.php");
+		?>
 
 	</div>
 	<?php
-        include_once("./assets/php/template/loadLibJS.php");
-    ?>
+		include_once("./assets/php/template/loadLibJS.php");
+	?>
 	<script>
 		$(document).ready(function () {
-			$(".nav li").removeClass("active");
 			$('#nav-galerie').addClass('active');
-			$('#nav-peintures').addClass('active');
+			$('#nav-peintures a').addClass('active');
 		});
 	</script>
 </body>

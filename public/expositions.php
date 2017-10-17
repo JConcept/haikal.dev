@@ -1,10 +1,10 @@
 <?php
-    include_once("./assets/php/template/htmlTemplateHeader.php");
+	include_once("./assets/php/template/htmlTemplateHeader.php");
 ?>
 <body id="expositions">
 		<?php
-            include_once("./assets/php/template/navMenu.php");
-        ?>		
+			include_once("./assets/php/template/navMenu.php");
+		?>		
 	<div class="main">
 		<div id="head-container"> 
 			<?php
@@ -12,93 +12,93 @@
 			?>
 		</div>	
 
-	    <h1 role="heading" aria-level="1">Expositions</h1>
-		
-
-		<!-- DÉBUT agenda  -->
-		<div class="agenda">
-			<div class="table-responsive">
-				<table class="table table-condensed table-bordered">
-					<thead>
-						<tr>
-							<th>Date</th>
-							<th>Time</th>
-							<th>Event</th>
-						</tr>
-					</thead>
-					<tbody>
-						<!-- Single event in a single day -->
-						<tr>
-							<td class="agenda-date" class="active" rowspan="1">
-								<div class="dayofmonth">26</div>
-								<div class="dayofweek">Saturday</div>
-								<div class="shortdate text-muted">July, 2014</div>
-							</td>
-							<td class="agenda-time">
-								5:30 AM
-							</td>
-							<td class="agenda-events">
-								<div class="agenda-event">
-									<i class="glyphicon glyphicon-repeat text-muted" title="Repeating event"></i> 
-									Fishing
-								</div>
-							</td>
-						</tr>
-						
-						<!-- Multiple events in a single day (note the rowspan) -->
-						<tr>
-							<td class="agenda-date" class="active" rowspan="3">
-								<div class="dayofmonth">24</div>
-								<div class="dayofweek">Thursday</div>
-								<div class="shortdate text-muted">July, 2014</div>
-							</td>
-							<td class="agenda-time">
-								8:00 - 9:00 AM 
-							</td>
-							<td class="agenda-events">
-								<div class="agenda-event">
-									Doctor's Appointment
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td class="agenda-time">
-								10:15 AM - 12:00 PM 
-							</td>
-							<td class="agenda-events">
-								<div class="agenda-event">
-									Meeting with executives
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td class="agenda-time">
-								7:00 - 9:00 PM
-							</td>
-							<td class="agenda-events">
-								<div class="agenda-event">
-									Aria's dance recital
-								</div>
-							</td>
-						</tr>
-					</tbody>
-				</table>
+		<section>
+			<h2 role="heading" aria-level="2">Expositions</h2>
+			
+			<!-- DÉBUT agenda  -->
+			<div class="agenda">
+				<div class="table-responsive">
+					<table class="table table-condensed table-bordered">
+						<thead>
+							<tr>
+								<th>Date</th>
+								<th>Heure</th>
+								<th>Évènement</th>
+							</tr>
+						</thead>
+						<tbody>
+							<!-- Single event in a single day -->
+							<tr>
+								<td class="agenda-date" class="active" rowspan="1">
+									<div class="dayofmonth">26</div>
+									<div class="dayofweek">Samedi</div>
+									<div class="shortdate text-muted">Juillet, 2000</div>
+								</td>
+								<td class="agenda-time">
+									17h30
+								</td>
+								<td class="agenda-events">
+									<div class="agenda-event">
+										<i class="glyphicon glyphicon-repeat text-muted" title="Repeating event"></i> 
+										Tous les derniers samedis du mois, expo.
+									</div>
+								</td>
+							</tr>
+							
+							<!-- Multiple events in a single day (note the rowspan) -->
+							<tr>
+								<td class="agenda-date" class="active" rowspan="3">
+									<div class="dayofmonth">31</div>
+									<div class="dayofweek">Jeudi</div>
+									<div class="shortdate text-muted">Juillet, 2000</div>
+								</td>
+								<td class="agenda-time">
+									8h00 - 9h00 
+								</td>
+								<td class="agenda-events">
+									<div class="agenda-event">
+										Inauguration
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="agenda-time">
+									10h15 - 18h00 
+								</td>
+								<td class="agenda-events">
+									<div class="agenda-event">
+										Exposition
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="agenda-time">
+									19h00 - 21h00
+								</td>
+								<td class="agenda-events">
+									<div class="agenda-event">
+										Clôture et verre de l'amitié
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</div>
-		</div>
-		<!-- FIN agenda  -->
+			<!-- FIN agenda  -->
+		</section>
 
-        <?php
-            include_once("./assets/php/template/footer.php");
-        ?>
+		<?php
+			include_once("./assets/php/template/footer.php");
+		?>
 
 	</div>
 	<?php
-        include_once("./assets/php/template/loadLibJS.php");
-    ?>
+		include_once("./assets/php/template/loadLibJS.php");
+	?>
 	<script>
 		$(document).ready(function () {
-			$(".nav li").removeClass("active");
-			$('#nav-exposition').addClass('active');
+			$('#nav-exposition a').addClass('active');
 		});
 	</script>
 </body>

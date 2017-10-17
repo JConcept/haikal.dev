@@ -1,50 +1,113 @@
-<nav class="navbar navbar-inverse sidebar" role="navigation" id="menu">
-    <div class="container-fluid">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-			<div class="navbar-toggle" data-toggle="collapse" data-target="#side-navbar">
-				<span>Menu</span>
-				<div class="pull-right">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</div>
-			</div>
-			<!-- <a class="navbar-brand" href="#">Menu<span class="pull-right showopacity glyphicon glyphicon-menu-hamburger"></span></a> -->
-		</div>
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="side-navbar">
-			<ul class="nav navbar-nav">
-				<li id="nav-index" class="active"><a href="./accueil.php">Accueil<span class="pull-right showopacity glyphicon glyphicon-home"></span></a></li>
-				<li id="nav-galerie" class="dropdown">
-					<a href="./galerie.php" class="dropdown-toggle" data-toggle="dropdown">Galerie <span class="caret"></span><span class="pull-right showopacity glyphicon glyphicon-th-large"></span></a><!-- book -->
-					<ul class="dropdown-menu forAnimate" role="menu">
-						<li id="nav-photos"><a href="./photos.php"><span class="pull-left showopacity glyphicon glyphicon-picture"></span>Photos</a></li><!--camera-->
-						<li id="nav-"><a href="./videos.php"><span class="pull-left showopacity glyphicon glyphicon-film"></span>Vidéos</a></li>
-						<li id="nav-peintures"><a href="./peintures.php"><span class="pull-left showopacity glyphicon glyphicon-blackboard"></span>Peintures</a></li>
-					</ul>
-				</li>
-				<li id="nav-exposition"><a href="./expositions.php">Expositions<span class="pull-right showopacity glyphicon glyphicon-blackboard"></span></a></li>
-				<li id="nav-biographie"><a href="./biographie.php">Biographie<span class="pull-right showopacity glyphicon glyphicon-education"></span></a></li>
-				<!--<li id="nav-"><a href="#">Articles<span class="pull-right showopacity glyphicon glyphicon-text-background"></span></a></li>
-				<li id="nav-"><a href="#">Ateliers<span class="pull-right showopacity glyphicon glyphicon-th-list"></span></a></li>
-				--><li id="nav-contact"><a href="./contact.php">Contact<span class="pull-right showopacity glyphicon glyphicon-envelope"></span></a></li>
-				<!--<li id="nav-"><a href="#">Liens<span class="pull-right showopacity glyphicon glyphicon-globe"></span></a></li>
-				<li id="nav-"><a href="#">Presse<span class="pull-right showopacity glyphicon glyphicon-book">--><!--list-alt--><!--</span></a></li>
-				<li id="nav-"><a href="#">Partager<span class="pull-right showopacity glyphicon glyphicon-share"></span></a></li>-->
-				<!--<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings <span class="caret"></span><span class="pull-right showopacity glyphicon glyphicon-cog"></span></a>
-					<ul class="dropdown-menu forAnimate" role="menu">
-						<li><a href="#">Action</a></li>
-						<li><a href="#">Another action</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Separated link</a></li>
-						<li class="divider"></li>
-						<li><a href="#">One more separated link</a></li>
-					</ul>
-				</li>-->
-			</ul>
-		</div>
-	</div>
+<nav id="navMenu">
+	<aside class="menu-close">
+		<ul>
+			<li id="nav-menu">
+				<a href="#" class="button-left">
+					<i class="glyphicon glyphicon-menu-hamburger"></i>
+					<span class="nav-label">Menu</span>
+				</a>
+			</li>
+			<li id="nav-index">
+				<a href="./accueil.php">
+					<i class="glyphicon glyphicon-home"></i>
+					<span class="nav-label">Accueil</span>
+				</a>
+			</li>
+			<li>
+				<a id="nav-galerie" href="#" class="collapsed" data-toggle="collapse" data-target="#sub-galerie">
+					<i class="glyphicon glyphicon-th-large"><!-- book --></i>
+					<span class="nav-label">
+						Galerie
+						<span class="glyphicon glyphicon-chevron-left pull-right"></span>
+					</span>
+				</a>
+				<ul class="collapse" role="sub-menu" id="sub-galerie">
+					<li id="nav-photos">
+						<a href="./photos.php">
+							Photos 
+							<i class="glyphicon glyphicon-picture pull-right"><!--camera--></i>
+						</a>
+					</li>
+					<li id="nav-videos">
+						<a href="./videos.php">
+							Vidéos
+							<i class="glyphicon glyphicon-film pull-right"></i>
+						</a>
+					</li>
+					<li id="nav-peintures">
+						<a href="./peintures.php">
+							Peintures
+							<i class="glyphicon glyphicon-blackboard pull-right"></i>
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li id="nav-exposition">
+				<a href="./expositions.php">
+					<i class="glyphicon glyphicon-blackboard"></i>
+					<span class="nav-label">Expositions</span>
+				</a>
+			</li>
+			<li id="nav-biographie">
+				<a href="./biographie.php">
+					<i class="glyphicon glyphicon-education"></i>
+					<span class="nav-label">Biographie</span>
+				</a>
+			</li>
+			<!-- <li id="nav-articles">
+				<a href="#">
+					<i class="glyphicon glyphicon-text-background"></i>
+					<span class="nav-label">Articles</span>
+				</a>
+			</li>
+			<li id="nav-ateliers">
+				<a href="#">
+					<i class="glyphicon glyphicon-th-list"></i>
+					<span class="nav-label">Ateliers</span>
+				</a>
+			</li> -->
+			<li id="nav-contact">
+				<a href="./contact.php">
+					<i class="glyphicon glyphicon-envelope"></i>
+					<span class="nav-label">Contact</span>
+				</a>
+			</li>
+			<!-- <li id="nav-liens">
+				<a href="#">
+					<i class="glyphicon glyphicon-globe"></i>
+					<span class="nav-label">Liens</span>
+				</a>
+			</li>
+			<li id="nav-presse">
+				<a href="#">
+					<i class="glyphicon glyphicon-book">--><!-- list-alt --><!--</i>
+					<span class="nav-label">Presse</span>
+				</a>
+			</li>
+			<li id="nav-partager">
+				<a href="#">
+					<i class="glyphicon glyphicon-share"></i>
+					<span class="nav-label">Partager</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="collapsed" data-toggle="collapse" data-target="#sub-settings">
+					<i class="glyphicon glyphicon-cog"></i>
+					<span class="nav-label">
+						Settings
+						<span class="glyphicon glyphicon-chevron-left pull-right"></span>
+					</span>
+				</a>
+				<ul class="collapse" role="sub-menu" id="sub-settings">
+					<li><a href="#">Action</a></li>
+					<li><a href="#">Another action</a></li>
+					<li><a href="#">Something else here</a></li>
+					<li class="divider"></li>
+					<li><a href="#">Separated link</a></li>
+					<li class="divider"></li>
+					<li><a href="#">One more separated link</a></li>
+				</ul>
+			</li>-->
+		</ul>
+	</aside>
 </nav>

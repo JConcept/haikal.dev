@@ -5,7 +5,7 @@
 		<?php
             include_once("./assets/php/template/navMenu.php");
         ?>		
-	<div class="main">	
+	<div class="main menu-close">	
 
 		<!-- DÉBUT caroussel --> 
 		<div id="carouselIndex" class="carousel slide" data-ride="carousel">
@@ -68,21 +68,25 @@
 
 		<!-- DÉBUT section présentation -->
 		<section id="presentation">
-			<h1 role="heading" aria-level="1">Présentation</h1>
-				<div id="presentation-content" class="row">
-					<p class="col-md-9 col-sm-8 col-xs-12">
+			<h2 role="heading" aria-level="2">Présentation</h2>
+				<div id="presentation-content">
+					<p>
 						<img id="artiste" src="./assets/img/photo.jpg" alt="Photo de l'artiste peintre Nelly Haikal" width="200" heigth="200">
-						Née à Beyrouth en 1957, belge d'origine libanaise, diplômée des Beaux-Arts de Saint Luc Liège en 1981, formatrice en français langue étrangère et animatrice d'ateliers d'art pour adultes immigrés à l'a.s.b.l La Bobine.<br><br>
+						Née&nbsp;à&nbsp;Beyrouth en 1957, belge d'origine libanaise, diplômée des Beaux-Arts de Saint Luc Liège en 1981, formatrice en français langue étrangère et animatrice d'ateliers d'art pour adultes immigrés à l'a.s.b.l La Bobine.<br><br>
 						Peintre figurative travaillant en atelier et traitant des scènes de rue et des figures humaines expressives. Autres créations, les  incrustations  photographiques dans les peintures, la photographie et les impressions photo selon les techniques alternatives utilisant des pigments,  travaille dans un atelier situé au 37 rue Fraigneux à 4000 Liège.<br>
 						Depuis 2016 en association de fait  avec un collectif d’artistes «&nbsp;MEzZe&nbsp;».<br>
-						<span class="callToAction" class="col">
+						<span class="callToAction" class="row">
 							<a href="./peintures.php" class="btn btn-primary pull-left col-md-6 col-sm-6 col-xs-12">Voir mes peintures</a>
 							<a href="./biographie.php" class="btn btn-primary pull-right col-md-6 col-sm-6 col-xs-12">En savoir plus</a>
 						</span>
 					</p>
-					<div id="social-link" class="col-md-3 col-sm-4 col-xs-12 row">
-						<a href="#" class="col-md-6 col-sm-6 col-xs-6"><img width="68" class="pull-left" height="68" src="./assets/img/socialLinkedIn.svg" alt="Icone de LinkedIn"></a>
-						<a href="#" class="col-md-6 col-sm-6 col-xs-6"><img width="68" height="68" class="pull-right" src="./assets/img/socialYouTube.svg" alt="Icone de YouTube"></a>
+					<div id="social-link">
+						<a href="#">
+							<?php echo file_get_contents("./assets/img/socialLinkedIn.svg"); ?>
+						</a>
+						<a href="#">
+							<?php echo file_get_contents("./assets/img/socialYouTube.svg"); ?>
+						</a>
 					</div>	
 				</div>		
 		</section>
@@ -156,8 +160,7 @@
     ?>
 	<script>
 		$(document).ready(function () {
-			$(".nav li").removeClass("active");
-			$('#nav-index').addClass('active');
+			$('#nav-index a').addClass('active');
 		});
 	</script>
 </body>
