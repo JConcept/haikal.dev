@@ -1,36 +1,30 @@
-// DÉBUT Navbar
-    function htmlbodyHeightUpdate(){
-		var height3 = $( window ).height()
-		var height1 = $('.nav').height()+50
-		height2 = $('.main').height()
-		if(height2 > height3){
-			$('html').height(Math.max(height1,height3,height2)+10);
-			$('body').height(Math.max(height1,height3,height2)+10);
-		}
-		else
-		{
-			$('html').height(Math.max(height1,height3,height2));
-			$('body').height(Math.max(height1,height3,height2));
-		}
-		
-	}
-	$(document).ready(function () {
-		htmlbodyHeightUpdate()
-		$( window ).resize(function() {
-			htmlbodyHeightUpdate()
-		});
-		$( window ).scroll(function() {
-			height2 = $('.main').height()
-  			htmlbodyHeightUpdate()
-		});
-	});
+// NAV MENU
+$(document).ready(function () {
+    $('.button-left').click(function () {
+        $('aside').toggleClass('menu-close');
+        $('.main').toggleClass('menu-close');
+        $('#navMenu li a').addClass('collapsed');
+        $('#navMenu li a').setAttribute('aria-expanded', 'false');
+        // $('#navMenu li a').each(function () {
+        //     $(this).attr('aria-expanded', 'false')
+        // });
+    });
 
-    /* set active class */
-    // $('a[href="' + this.location.pathname + '"]').parents('li,ul').addClass('active');
+});
+function checkPosition() {
+    if (window.matchMedia("(max-width: 1330px)").matches) {
+        $('aside').addClass('menu-close');
+        $('.main').addClass('menu-close');
+    } else {
+        $('aside').removeClass('menu-close');
+        $('.main').removeClass('menu-close');
+    }
+}
+window.addEventListener('resize', checkPosition, false);
+window.addEventListener('load', checkPosition, false);
+// END nav menu
 
-// FIN Navbar
-
-// DÉBUT Slider
+// SLIDER
     $('.carousel-sync').on('slide.bs.carousel', function(ev) {
         var dir = ev.direction == 'right' ? 'prev' : 'next';
         $('.carousel-sync').not('.sliding').addClass('sliding').carousel(dir);
@@ -66,7 +60,7 @@
     $(function(){
         $("#carousel8").carousel();
     });
-// FIN Slider
+// END slider
 
 /*$(document).ready(function() {
     $('#demo').pinterest_grid({

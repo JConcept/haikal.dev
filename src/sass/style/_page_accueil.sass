@@ -1,61 +1,68 @@
 /*************/
 /*  ACCUEIL  */
 /*************/
-/*Menu Nav*/
-#index #menu
-    margin-bottom: 0
-/*Logo*/
-#index #page-header
-    position: absolute
-    top: 0
-    left: 0
-    right: 0
-    margin: 0
-    text-align: center
-    z-index: 100
-/* DÉBUT carousel */
-#index #carouselIndex .carousel-inner div
-    height: 400px
-#index #carouselIndex
-    margin: -10px
-/*Présentation*/
-#index #presentation
-    max-width: 1100px
-    margin: 60px auto
-#index #presentation-content
-    display: flex
-    flex-wrap: wrap
-    justify-content: space-around
-    align-items: center
-#index #presentation h1
-    margin: 80px 60% 20px 20%
-#index #presentation #artiste
-    float: right
-    width: 180px
-    height: auto
-    border-radius: 100%
-#index #presentation p
-    display: inline-block
-    max-width: 743px
-    width: 70%
-#presentation-content p img
-    margin: 10px
-#index #presentation .callToAction a
-    min-width: 170px
-#index #presentation-content #social-link
-    width: 20%
-    display: flex
-    justify-content: space-around
-    align-items: stretch
-    margin: 15px
-#index #presentation-content #social-link a
-    margin: 15px
-@media (max-width:860px) 
-    #index #presentation-content #social-link
-        flex-direction: column
-@media (max-width:693px) 
-    #index #presentation-content #social-link
-        flex-direction: column
-@media (max-width:480px) 
-    #index #presentation #artiste
-        width: 100%
+#index 
+	/* DÉBUT carousel */
+	#carouselIndex .carousel-inner div
+		height: 400px
+	/*Présentation*/
+	#presentation
+		max-width: 1100px
+		h2
+			margin: 30px 60% 20px 20%
+			padding: 0
+			@media (max-width:430px)
+				margin: 80px auto 20px;
+		#presentation-content
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-around
+			align-items: center
+			#artiste
+				float: right
+				width: 180px
+				max-width: 100%
+				height: auto
+				border-radius: 100%
+				margin: 20px
+				@media (max-width:540px)
+					float: none
+					width: 100%
+					margin: 0 0 20px
+			p
+				display: inline-block
+				max-width: 743px
+				width: 70%
+				padding: 20px 0 20px 
+				@media (max-width:450px)
+					width: 100%
+			.callToAction a
+				min-width: 170px
+				@media (max-width:675px)
+					width: 100%
+					max-width: 100%
+					margin: 10px 0
+			#social-link
+				width: 20%
+				display: flex
+				justify-content: space-around
+				align-items: stretch
+				margin: 15px
+				.linkedIn .a
+					fill: $linkedIn
+				.youtube .a
+					fill: $youtube
+				a:hover 
+					.linkedIn .a
+						fill: darken($linkedIn, 10%)
+					.youtube .a
+						fill: darken($youtube, 10%)
+				@media (max-width:860px)
+					flex-direction: column
+				@media (max-width:450px)
+					flex-direction: row
+					width: 100%
+				a
+					margin: 15px
+					@media (max-width:480px)
+						margin-left: 0

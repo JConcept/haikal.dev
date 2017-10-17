@@ -1,33 +1,41 @@
 /**********/
 /*  LOGO  */
 /**********/
-#head-container
-    height: 142px
-    position: relative
-    margin: -10px
-#container-logo
-    display: inline-block
-    height: 0
-    position: absolute
-    top: 0
-    left: 0
-    right: 0
-    margin: -20px 0
-    /*width: 100%*/
-    z-index: 1000
-    text-align: center
-#header-logo
-    display: inline-block
-    width: 252px
-    margin: 0 auto
-@media (min-width:768px)
-    #container-logo
-        position: fixed
-        margin: 0
-#Nelly-Haikal
-    position: absolute
-    color: #FFFFFF
-    font-size: 33px
-    left: 0px
-    right: 0
-    top: 49px
+header
+	#container-logo
+		display: inline-block
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		height: 0
+		margin: 0
+		z-index: 1000
+		text-align: center
+		// @media (min-width:768px)
+		// 	position: fixed
+		// 	margin: 0
+		#svg
+			display: inline-block
+			width: 252px
+			margin: 0 auto
+			.a
+				clip-path: url(#a)
+			.b,
+			.c
+				fill: url(#b)
+			.d
+				fill: url(#d)
+			.e
+				fill: url(#e)
+			@media (max-width: 300px)
+				display: none
+		#Nelly-Haikal
+			position: absolute
+			left: 0
+			right: 0
+			top: 54px
+			height: 0
+			margin: 0
+			color: $gray-lighter
+			font-size: 33px
