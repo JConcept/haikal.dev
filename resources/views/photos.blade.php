@@ -1,28 +1,20 @@
-<?php
-	include_once("./assets/php/template/htmlTemplateHeader.php");
-?>
-<body id="photos">
-		<?php
-			include_once("./assets/php/template/navMenu.php");
-		?>		
-	<div class="main row">
-		<div id="head-container"> 
-			<?php
-				include_once("./assets/php/template/header.php");
-			?>
-		</div>	
-
+@php
+	$bodyId = 'photos';
+	$title = 'Photos';
+@endphp
+@extends('layouts.main')
+	@section('content')
 		<section>
 			<h2 role="heading" aria-level="2">Photos</h3>
-				<!--<form method="get" action="" class="btn-group">
+				{{--  <!--<form method="get" action="" class="btn-group">
 					<select name="photos" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						<option value="#couleur">couleur</option>
 						<option value="#noir-blanc">noir et blanc</option>
 					</select>
-				</form>-->
+				</form>-->  --}}
 				<div class="row">
 					<div role="tabpanel">
-						<!-- Nav tabs -->
+						{{--  <!-- Nav tabs -->  --}}
 						<ul class="nav nav-tabs" role="tablist">
 							<li role="presentation" class="active">
 								<a href="#couleur" aria-controls="couleur" role="tab" data-toggle="tab">Couleur</a>
@@ -32,14 +24,14 @@
 							</li>
 						</ul>
 					
-						<!-- Tab panes -->
+						{{--  <!-- Tab panes -->  --}}
 						<div class="tab-content">
 							<div role="tabpanel" class="tab-pane active" id="couleur">
 								
 								<article class="col-sm-6 col-lg-3">
 									<h3>Titre 1</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione consequatur tenetur sequi voluptatem reiciendis inventore laborum non aperiam quibusdam unde, laudantium at optio nihil. Optio quas quis eius illo ut.</p>
-									<!-- DÉBUT caroussel --> 
+									{{--  <!-- DÉBUT caroussel -->   --}}
 									<div id="carousel1" class="carousel slide" data-ride="carousel">
 										<ol class="carousel-indicators">
 											<li data-target="#carousel1" data-slide-to="0" class="active"></li>
@@ -95,14 +87,14 @@
 										<a class="left carousel-control" href="#carousel1" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
 										<a class="right carousel-control" href="#carousel1" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 									</div>
-									<!-- FIN caroussel -->
+									{{--  <!-- FIN caroussel -->  --}}
 									<a href="" class="callToAction btn btn-primary">En voir plus</a>
 								</article>
 								
 								<article class="col-sm-6 col-lg-3">
 									<h3>Titre 2</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione consequatur tenetur sequi voluptatem reiciendis inventore laborum non aperiam quibusdam unde, laudantium at optio nihil. Optio quas quis eius illo ut.</p>
-									<!-- DÉBUT caroussel --> 
+									{{--  <!-- DÉBUT caroussel -->   --}}
 									<div id="carousel2" class="carousel slide" data-ride="carousel">
 										<ol class="carousel-indicators">
 											<li data-target="#carousel2" data-slide-to="0" class="active"></li>
@@ -143,14 +135,14 @@
 										<a class="left carousel-control" href="#carousel2" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
 										<a class="right carousel-control" href="#carousel2" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 									</div>
-									<!-- FIN caroussel -->
+									{{--  <!-- FIN caroussel -->  --}}
 									<a href="" class="callToAction btn btn-primary">En voir plus</a>
 								</article>
 								
 								<article class="col-sm-6 col-lg-3">
 									<h3>Titre 2</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione consequatur tenetur sequi voluptatem reiciendis inventore laborum non aperiam quibusdam unde, laudantium at optio nihil. Optio quas quis eius illo ut.</p>
-									<!-- DÉBUT caroussel --> 
+									{{--  <!-- DÉBUT caroussel -->   --}}
 									<div id="carousel3" class="carousel slide" data-ride="carousel">
 										<ol class="carousel-indicators">
 											<li data-target="#carousel3" data-slide-to="0" class="active"></li>
@@ -179,14 +171,14 @@
 										<a class="left carousel-control" href="#carousel3" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
 										<a class="right carousel-control" href="#carousel3" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 									</div>
-									<!-- FIN caroussel -->
+									{{--  <!-- FIN caroussel -->  --}}
 									<a href="" class="callToAction btn btn-primary">En voir plus</a>
 								</article>
 								
 								<article class="col-sm-6 col-lg-3">
 									<h3>Titre 2</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione consequatur tenetur sequi voluptatem reiciendis inventore laborum non aperiam quibusdam unde, laudantium at optio nihil. Optio quas quis eius illo ut.</p>
-									<!-- DÉBUT caroussel --> 
+									{{--  <!-- DÉBUT caroussel -->   --}}
 									<div id="carousel4" class="carousel slide" data-ride="carousel">
 										<ol class="carousel-indicators">
 											<li data-target="#carousel4" data-slide-to="0" class="active"></li>
@@ -215,7 +207,7 @@
 										<a class="left carousel-control" href="#carousel4" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
 										<a class="right carousel-control" href="#carousel4" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 									</div>
-									<!-- FIN caroussel -->
+									{{--  <!-- FIN caroussel -->  --}}
 									<a href="" class="callToAction btn btn-primary">En voir plus</a>
 								</article>
 								<div class="clear">&nbsp;</div>
@@ -224,7 +216,7 @@
 								<article class="col-sm-6 col-lg-3">
 									<h3>Titre 1</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione consequatur tenetur sequi voluptatem reiciendis inventore laborum non aperiam quibusdam unde, laudantium at optio nihil. Optio quas quis eius illo ut.</p>
-									<!-- DÉBUT caroussel --> 
+									{{--  <!-- DÉBUT caroussel -->   --}}
 									<div id="carousel5" class="carousel slide" data-ride="carousel">
 										<ol class="carousel-indicators">
 											<li data-target="#carousel5" data-slide-to="0" class="active"></li>
@@ -265,7 +257,7 @@
 										<a class="left carousel-control" href="#carousel5" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
 										<a class="right carousel-control" href="#carousel5" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 									</div>
-									<!-- FIN caroussel -->
+									{{--  <!-- FIN caroussel -->  --}}
 									<a href="" class="callToAction btn btn-primary">En voir plus</a>
 								</article>
 							</div>
@@ -273,7 +265,8 @@
 					</div>
 				</div>
 		</section>
-		<!-- DÉBUT caroussel 
+	@endsection
+		{{--  <!-- DÉBUT caroussel 
 		<div id="carousel-id" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
 				<li data-target="#carousel-id" data-slide-to="0" class="active"></li>
@@ -294,23 +287,4 @@
 			<a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
 			<a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 		</div> -->
-		<!-- FIN caroussel -->
-
-		<!-- DÉBUT section  -->
-
-		<?php
-			include_once("./assets/php/template/footer.php");
-		?>
-
-	</div>
-	<?php
-		include_once("./assets/php/template/loadLibJS.php");
-	?>
-	<script>
-		$(document).ready(function () {
-			$('#nav-galerie').addClass('active');
-			$('#nav-photos a').addClass('active');
-		});
-	</script>
-</body>
-</html>
+		<!-- FIN caroussel -->  --}}

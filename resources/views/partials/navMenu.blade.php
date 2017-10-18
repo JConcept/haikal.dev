@@ -8,14 +8,14 @@
 				</a>
 			</li>
 			<li id="nav-index">
-				<a href="./accueil.php">
+				<a href="./">
 					<i class="glyphicon glyphicon-home"></i>
 					<span class="nav-label">Accueil</span>
 				</a>
 			</li>
 			<li>
 				<a id="nav-galerie" href="#" class="collapsed" data-toggle="collapse" data-target="#sub-galerie">
-					<i class="glyphicon glyphicon-th-large"><!-- book --></i>
+					<i class="glyphicon glyphicon-th-large">{{--  <!-- book -->  --}}</i>
 					<span class="nav-label">
 						Galerie
 						<span class="glyphicon glyphicon-chevron-left pull-right"></span>
@@ -23,38 +23,38 @@
 				</a>
 				<ul class="collapse" role="sub-menu" id="sub-galerie">
 					<li id="nav-photos">
-						<a href="./photos.php">
+						<a href="./photos">
 							Photos 
-							<i class="glyphicon glyphicon-picture pull-right"><!--camera--></i>
+							<i class="glyphicon glyphicon-picture pull-right">{{--  <!--camera-->  --}}</i>
 						</a>
 					</li>
 					<li id="nav-videos">
-						<a href="./videos.php">
+						<a href="./videos">
 							Vidéos
 							<i class="glyphicon glyphicon-film pull-right"></i>
 						</a>
 					</li>
 					<li id="nav-peintures">
-						<a href="./peintures.php">
+						<a href="./peintures">
 							Peintures
 							<i class="glyphicon glyphicon-blackboard pull-right"></i>
 						</a>
 					</li>
 				</ul>
 			</li>
-			<li id="nav-exposition">
-				<a href="./expositions.php">
+			<li id="nav-expositions">
+				<a href="./expositions">
 					<i class="glyphicon glyphicon-blackboard"></i>
 					<span class="nav-label">Expositions</span>
 				</a>
 			</li>
 			<li id="nav-biographie">
-				<a href="./biographie.php">
+				<a href="./biographie">
 					<i class="glyphicon glyphicon-education"></i>
 					<span class="nav-label">Biographie</span>
 				</a>
 			</li>
-			<!-- <li id="nav-articles">
+			{{--  <!-- <li id="nav-articles">
 				<a href="#">
 					<i class="glyphicon glyphicon-text-background"></i>
 					<span class="nav-label">Articles</span>
@@ -65,14 +65,14 @@
 					<i class="glyphicon glyphicon-th-list"></i>
 					<span class="nav-label">Ateliers</span>
 				</a>
-			</li> -->
+			</li> -->  --}}
 			<li id="nav-contact">
-				<a href="./contact.php">
+				<a href="./contact">
 					<i class="glyphicon glyphicon-envelope"></i>
 					<span class="nav-label">Contact</span>
 				</a>
 			</li>
-			<!-- <li id="nav-liens">
+			{{--  <!-- <li id="nav-liens">
 				<a href="#">
 					<i class="glyphicon glyphicon-globe"></i>
 					<span class="nav-label">Liens</span>
@@ -107,7 +107,7 @@
 					<li class="divider"></li>
 					<li><a href="#">One more separated link</a></li>
 				</ul>
-			</li>-->
+			</li>-->  --}}
 		</ul>
 	</aside>
 </nav>

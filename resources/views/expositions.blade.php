@@ -1,21 +1,13 @@
-<?php
-	include_once("./assets/php/template/htmlTemplateHeader.php");
-?>
-<body id="expositions">
-		<?php
-			include_once("./assets/php/template/navMenu.php");
-		?>		
-	<div class="main">
-		<div id="head-container"> 
-			<?php
-				include_once("./assets/php/template/header.php");
-			?>
-		</div>	
-
+@php
+	$bodyId = 'expositions';
+	$title = 'Expositions';
+@endphp
+@extends('layouts.main')
+	@section('content')
 		<section>
 			<h2 role="heading" aria-level="2">Expositions</h2>
 			
-			<!-- DÉBUT agenda  -->
+			{{--  <!-- DÉBUT agenda  -->  --}}
 			<div class="agenda">
 				<div class="table-responsive">
 					<table class="table table-condensed table-bordered">
@@ -27,7 +19,7 @@
 							</tr>
 						</thead>
 						<tbody>
-							<!-- Single event in a single day -->
+							{{--  <!-- Single event in a single day -->  --}}
 							<tr>
 								<td class="agenda-date" class="active" rowspan="1">
 									<div class="dayofmonth">26</div>
@@ -45,7 +37,7 @@
 								</td>
 							</tr>
 							
-							<!-- Multiple events in a single day (note the rowspan) -->
+							{{--  <!-- Multiple events in a single day (note the rowspan) -->  --}}
 							<tr>
 								<td class="agenda-date" class="active" rowspan="3">
 									<div class="dayofmonth">31</div>
@@ -85,21 +77,6 @@
 					</table>
 				</div>
 			</div>
-			<!-- FIN agenda  -->
+			{{--  <!-- FIN agenda  -->  --}}
 		</section>
-
-		<?php
-			include_once("./assets/php/template/footer.php");
-		?>
-
-	</div>
-	<?php
-		include_once("./assets/php/template/loadLibJS.php");
-	?>
-	<script>
-		$(document).ready(function () {
-			$('#nav-exposition a').addClass('active');
-		});
-	</script>
-</body>
-</html>
+	@endsection
