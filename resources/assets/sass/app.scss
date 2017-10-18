@@ -1,9 +1,15 @@
+// Colors
+@import "color";
 
 // Fonts
+@import url('https://fonts.googleapis.com/css?family=Overpass:300,400,700,900');
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 
 // Variables
-@import "variables";
+@import "vendor/variables";
 
 // Bootstrap
-@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+@import "vendor/bootstrap";
+
+// Styles
+@import "style/style";

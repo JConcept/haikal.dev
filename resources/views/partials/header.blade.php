@@ -9,12 +9,12 @@
 					<stop offset="17%" stop-color="#EF8A60" />
 					<stop offset="84%" stop-color="#D11919" />
 				</radialGradient>
-				<!-- GARDER D ?
+				{{--  <!-- GARDER D ?
 				<radialGradient id="d" cx="1374.77" cy="74.817" r="43.965" gradientUnits="userSpaceOnUse">
 					<stop offset="41%" stop-color="#D11919" />
 					<stop offset="84%" stop-color="#EF8A60" />
 				</radialGradient> -->
-				<!-- GARDER D ? -->
+				<!-- GARDER D ? -->  --}}
 				<radialGradient id="e" r="1"> 
 					<stop offset="17%" stop-color="#EF5350" />
 					<stop offset="84%" stop-color="#D11919" />
@@ -24,7 +24,7 @@
 				<g class="a">
 					<path class="b" d="M1397,128,1508.7-27.2l-19.6-6.4L1385,115.8" />
 					<path class="c" d="M1410.3,138.2l115.1-160-6.8-2.2L1405.7,132.8" />
-					<!-- GARDER D ? <path class="d" d="M1363,92.7l37.9.3L1385,116Z" /> --><!-- GARDER D ? -->
+					{{--  <!-- GARDER D ? <path class="d" d="M1363,92.7l37.9.3L1385,116Z" /> --><!-- GARDER D ? -->  --}}
 					<path class="e" d="M1603,94.6l-240-1.9.4-46.7,240,1.8Z" />
 				</g>
 			</g>
