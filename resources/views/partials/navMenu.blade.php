@@ -22,6 +22,12 @@
 					</span>
 				</a>
 				<ul class="collapse" role="sub-menu" id="sub-galerie">
+					<li id="nav-peintures">
+						<a href="./peintures">
+							Peintures
+							<i class="glyphicon glyphicon-blackboard pull-right"></i>
+						</a>
+					</li>
 					<li id="nav-photos">
 						<a href="./photos">
 							Photos 
@@ -32,12 +38,6 @@
 						<a href="./videos">
 							Vidéos
 							<i class="glyphicon glyphicon-film pull-right"></i>
-						</a>
-					</li>
-					<li id="nav-peintures">
-						<a href="./peintures">
-							Peintures
-							<i class="glyphicon glyphicon-blackboard pull-right"></i>
 						</a>
 					</li>
 				</ul>
