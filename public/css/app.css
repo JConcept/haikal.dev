@@ -6797,9 +6797,6 @@ button.close {
  * Copyright 2016-2018 JConcept.be.
  * Licensed under MIT (https://github.com/.../LICENSE)
  */
-/*************/
-/*  GENERAL  */
-/*************/
 body {
   overflow-x: hidden;
 }
@@ -6833,6 +6830,7 @@ section section {
   clear: both;
 }
 
+span.callToAction,
 div.callToAction {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6841,6 +6839,7 @@ div.callToAction {
       justify-content: space-around;
 }
 
+span.callToAction a,
 div.callToAction a {
   margin: 10px;
   max-width: 190px;
@@ -6867,9 +6866,6 @@ a.callToAction {
   }
 }
 
-/*********/
-/*  NAV  */
-/*********/
 .main {
   position: relative;
   -webkit-transition: all 0.5s ease-in-out;
@@ -7010,10 +7006,6 @@ a.callToAction {
   z-index: 100;
 }
 
-/* Modification de la barre de scroll ? -> utiliser jQuery */
-/**********/
-/*  LOGO  */
-/**********/
 header #container-logo {
   display: inline-block;
   position: absolute;
@@ -7067,9 +7059,6 @@ header #container-logo #Nelly-Haikal {
   font-size: 33px;
 }
 
-/************/
-/*  FOOTER  */
-/************/
 footer {
   background-color: #231F20;
   color: white;
@@ -7113,9 +7102,6 @@ footer a:hover {
   color: #eeeeee;
 }
 
-/**************/
-/*  CAROUSEL  */
-/**************/
 #carousel1,
 #carousel2,
 #carousel3,
@@ -7138,14 +7124,6 @@ footer a:hover {
 #carousel8 .carousel-inner div {
   height: 200px;
   background-size: cover !important;
-}
-
-/*************/
-/*  ACCUEIL  */
-/*************/
-#index {
-  /* DÉBUT carousel */
-  /*Présentation*/
 }
 
 #index #carouselIndex .carousel-inner div {
@@ -7280,9 +7258,6 @@ footer a:hover {
   }
 }
 
-/*****************/
-/*   PEINTURES   */
-/*****************/
 .wrapper {
   width: 100%;
   position: relative;
@@ -7420,7 +7395,6 @@ footer a:hover {
   padding-top: 48.7%;
 }
 
-/* BEAUTY */
 body,
 html {
   padding: 0;
@@ -7536,7 +7510,6 @@ html {
   background-image: u("https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xap1/t51.2885-15/10483455_592335754230795_537719826_n.jpg");
 }
 
-/* réglage hover */
 .wrapper .column:hover::before {
   position: absolute;
   display: block;
@@ -7548,7 +7521,6 @@ html {
   z-index: 2;
 }
 
-/* réglage insertion de texte */
 .wrapper .column .hover {
   margin-top: 50px;
   position: absolute;
@@ -7590,18 +7562,13 @@ html {
   left: 6px;
 }
 
-/* PROVISOIRE /!\ */
 .wrapper .column {
   padding: 0;
 }
 
-/*************/
-/*   Expos   */
-/*************/
 .agenda {
   max-width: 800px;
   margin: 40px auto 0;
-  /* Times */
 }
 
 .agenda .table-bordered,
@@ -7636,9 +7603,6 @@ html {
   width: 140px;
 }
 
-/******************/
-/*   BIOGRAPHIE   */
-/******************/
 #biographie section section {
   max-width: 745px;
   margin: 20px auto;
@@ -7668,9 +7632,6 @@ html {
   margin: 0 10px 5px 0;
 }
 
-/***************/
-/*   CONTACT   */
-/***************/
 #contact form {
   max-width: 745px;
   margin: 0 auto;

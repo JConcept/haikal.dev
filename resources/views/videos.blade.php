@@ -7,11 +7,9 @@
 		<section>
 			<h2 role="heading" aria-level="2">Vidéos</h2>
 			<form method="get" action="" class="btn-group">
-				{{--  <!--<label for="" class="dropdown-menu" ></label>-->  --}}
 					<select name="photos" class="btn btn-default dropdown-toggle" data-toggle="dropdown"aria-haspopup="true" aria-expanded="false">
 					<option value="#couleur">couleur</option>
 					<option value="#noir-blanc">noir et blanc</option>
-					{{--  <!--<span class="caret"></span>-->  --}}
 				</select>
 			</form>				
 			{{--  <!-- DÉBUT caroussel -->   --}}

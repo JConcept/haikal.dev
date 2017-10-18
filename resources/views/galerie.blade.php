@@ -21,9 +21,6 @@
 					</div>
 					<div class="item" id="ca-3">
 					</div>
-					{{--  <style>
-						/* style pour insérer les background OU utiliser jQuery ? */
-					</style>  --}}
 				</div>
 					<a class="left carousel-control" href="#carousel-id" data-slide="prev"><spanclass="glyphicon glyphicon-chevron-left"></span></a>
 					<a class="right carousel-control" href="#carousel-id" data-slide="next"><spanclass="glyphicon glyphicon-chevron-right"></span></a>
