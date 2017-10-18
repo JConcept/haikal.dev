@@ -2,42 +2,12 @@
 	@section('content')
 		{{--  <!-- DÉBUT caroussel -->   --}}
 		<div id="carouselIndex" class="carousel slide" data-ride="carousel">
-			{{--  <!--
-			<ol class="carousel-indicators">
-				<li data-target="#carouselIndex" data-slide-to="0" class="active"></li>
-				<li data-target="#carouselIndex" data-slide-to="1" class=""></li>
-				<li data-target="#carouselIndex" data-slide-to="2" class=""></li>
-			</ol>-->  --}}
 			<div class="carousel-inner">
 				<div class="item active" id="ca-1">
-					{{--  <!--<img alt="First slide" src="./assets/img/caroussel (1).jpg">
-					<div class="container">
-						<div class="carousel-caption">
-							<h1>Example headline.</h1>
-							<p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-							<p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-						</div>
-					</div>-->  --}}
 				</div>
 				<div class="item" id="ca-2">
-					{{--  <!--<img alt="Second slide" src="./assets/img/caroussel (2).jpg">
-					<div class="container">
-						<div class="carousel-caption">
-							<h1>Another example headline.</h1>
-							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-							<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-						</div>
-					</div>-->  --}}
 				</div>
 				<div class="item" id="ca-3">
-					{{--  <!--<img alt="Third slide" src="./assets/img/caroussel (3).jpg">
-					<div class="container">
-						<div class="carousel-caption">
-							<h1>One more for good measure.</h1>
-							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-							<p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-						</div>
-					</div>-->  --}}
 				</div>
 				<style>
 					#carouselIndex #ca-1{

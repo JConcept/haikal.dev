@@ -6,12 +6,6 @@
 	@section('content')
 		<section>
 			<h2 role="heading" aria-level="2">Photos</h3>
-				{{--  <!--<form method="get" action="" class="btn-group">
-					<select name="photos" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						<option value="#couleur">couleur</option>
-						<option value="#noir-blanc">noir et blanc</option>
-					</select>
-				</form>-->  --}}
 				<div class="row">
 					<div role="tabpanel">
 						{{--  <!-- Nav tabs -->  --}}
@@ -266,25 +260,3 @@
 				</div>
 		</section>
 	@endsection
-		{{--  <!-- DÉBUT caroussel 
-		<div id="carousel-id" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#carousel-id" data-slide-to="0" class="active"></li>
-				<li data-target="#carousel-id" data-slide-to="1" class=""></li>
-				<li data-target="#carousel-id" data-slide-to="2" class=""></li>
-			</ol>
-			<div class="carousel-inner">
-				<div class="item active" id="ca-1">
-				</div>
-				<div class="item" id="ca-2">
-				</div>
-				<div class="item" id="ca-3">
-				</div>
-				<style>
-					/* style pour insérer les background OU utiliser jQuery ? */
-				</style>
-			</div>
-			<a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-			<a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-		</div> -->
-		<!-- FIN caroussel -->  --}}

@@ -1,11 +1,3 @@
-{{--  @php
-	/* Récupération du titre via le nom du fichier php */
-	$path = $_SERVER['PHP_SELF']; /* @fail : faille de sécurité en attaque XSS ? */
-	$file = basename ($path);
-    $reg = '#\.php$#';
-	$title = preg_replace($reg, '', $file);
-    $title[0] = strtoupper($title[0]);
-@endphp   --}}
 <!DOCTYPE html>
 <html lang="fr">
 <head>
