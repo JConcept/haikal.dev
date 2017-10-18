@@ -12,6 +12,9 @@
 	<script>
 		$(document).ready(function () {
 			$('#nav-{{ $bodyId }} a').addClass('active');
+			if('{{ $bodyId }}' == 'peintures' || '{{ $bodyId }}' == 'photos' || '{{ $bodyId }}' == 'videos'){
+				$('#nav-galerie').addClass('active');
+			}
 		});
 	</script>
 </body>
