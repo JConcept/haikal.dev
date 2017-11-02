@@ -10,106 +10,121 @@
 				{{--  <!-- Nav tabs -->  --}}
 				<ul class="nav nav-tabs" role="tablist">
 					<li role="presentation" class="active">
-						<a href="#paysage" aria-controls="paysage" role="tab" data-toggle="tab">Paysage</a>
+						<a href="#nouvelles" aria-controls="nouvelles" role="tab" data-toggle="tab">nouvelles</a>
 					</li>
 					<li role="presentation">
-						<a href="#portrait" aria-controls="portrait" role="tab" data-toggle="tab">Portrait</a>
+						<a href="#anciennes" aria-controls="anciennes" role="tab" data-toggle="tab">anciennes</a>
 					</li>
 				</ul>
 			
 				{{--  <!-- Tab panes -->  --}}
 				<div class="tab-content">
-					<div role="tabpanel" class="tab-pane active" id="paysage">
-
+					<div role="tabpanel" class="tab-pane active" id="nouvelles">
+						{{--  <!-- Modal -->  --}}
+						<div id="myModal" class="modal fade" role="dialog">
+							<div class="modal-dialog modal-content">
+								<header class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</header>
+								<section class="modal-body">
+									<img src="./img/peintures/tableau (1).jpg" alt="">
+									<h3 class="modal-title">Titre 1</h3>
+									<p>Petit texte explicatif de la peinture.</p>
+								</section>
+								<footer class="modal-footer">
+									<button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+								</footer>
+							</div>
+						</div>
 						<div class="wrapper">
-							<div class="column">
+							<section class="column" data-toggle="modal" data-target="#myModal">
 								<div class="inner"></div>
 								<div class="hover">			
 									<div class="more"></div>
 									<h3>Titre 1</h3>		
 								</div>
-							</div>
-							<div class="column">
+							</section>
+							<section class="column">
 								<div class="hover">			
 									<div class="more"></div>
 									<h3>Titre 2</h3>
 								</div>
 								<div class="inner"></div>
-							</div>
-							<div class="column">
+							</section>
+							<section class="column">
 								<div class="hover">			
 									<div class="more"></div>
 									<h3>Titre 3</h3>			
 								</div>
 								<div class="inner"></div>
-							</div>
-							<div class="column">
+							</section>
+							<section class="column">
 								<div class="hover">			
 									<div class="more"></div>
 									<h3>Titre X</h3>			
 								</div>
 								<div class="inner"></div>
-							</div>
-							<div class="column">
+							</section>
+							<section class="column">
 								<div class="hover">			
 									<div class="more"></div>
 									<h3>Titre X</h3>			
 								</div>
 								<div class="inner"></div>
-							</div>
-							<div class="column">
+							</section>
+							<section class="column">
 								<div class="hover">			
 									<div class="more"></div>
 									<h3>Titre X</h3>			
 								</div>
 								<div class="inner"></div>
-							</div>
-							<div class="column">
+							</section>
+							<section class="column">
 								<div class="hover">			
 									<div class="more"></div>
 									<h3>Titre X</h3>			
 								</div>
 								<div class="inner"></div>
-							</div>
-							<div class="column">
+							</section>
+							<section class="column">
 								<div class="hover">			
 									<div class="more"></div>
 									<h3>Titre X</h3>			
 								</div>
 								<div class="inner"></div>
-							</div>
-							<div class="column">
+							</section>
+							<section class="column">
 								<div class="hover">			
 									<div class="more"></div>
 									<h3>Titre X</h3>			
 								</div>
 								<div class="inner"></div>
-							</div>
-							<div class="column">
+							</section>
+							<section class="column">
 								<div class="hover">			
 									<div class="more"></div>
 									<h3>Titre X</h3>			
 								</div>
 								<div class="inner"></div>
-							</div>
-							<div class="column">
+							</section>
+							<section class="column">
 								<div class="hover">			
 									<div class="more"></div>
 									<h3>Titre X</h3>			
 								</div>
 								<div class="inner"></div>
-							</div>
-							<div class="column">
+							</section>
+							<section class="column">
 								<div class="hover">			
 									<div class="more"></div>
 									<h3>Titre X</h3>			
 								</div>
 								<div class="inner"></div>
-							</div>
+							</section>
 						</div>
 
 					</div>
-					<div role="tabpanel" class="tab-pane" id="portrait">
+					<div role="tabpanel" class="tab-pane" id="anciennes">
 
 						<div class="wrapper">
 							<div class="column">
