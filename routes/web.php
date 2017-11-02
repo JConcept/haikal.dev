@@ -13,8 +13,6 @@
 
 Route::get('/','HomeController@index') -> name('home');
 
-Route::get('/{id}', 'HomeController@id');
-
 Route::get('/biographie', function () {
     return view('biographie');
 });
