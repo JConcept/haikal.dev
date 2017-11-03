@@ -6,6 +6,11 @@
 	@section('content')
 		<section>
 			<h2 role="heading" aria-level="2">Vidéos</h2>
+
+
+			{{--  @TODO : Implémenter le contenu via une chaine Vimeo, dailymotion ou autres service vidéo offrant une api sympa pour le faire  --}}
+
+
 			<form method="get" action="" class="btn-group">
 					<select name="photos" class="btn btn-default dropdown-toggle" data-toggle="dropdown"aria-haspopup="true" aria-expanded="false">
 					<option value="#couleur">couleur</option>
