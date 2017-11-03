@@ -8,7 +8,8 @@
 			<h2 role="heading" aria-level="2">Contact</h2>
 			
 				{{--  <!-- DÉBUT formulaire de contact -->  --}}
-				<form action="" method="POST" role="form" id="contact-form">		
+				<form action="" method="POST" role="form" id="contact-form">	
+					{{-- @TODO : Utiliser Material Design by Google pour améliorer le formulaire  --}}
 					<div class="form-group">
 						<label for="">Nom</label>
 						<input type="text" class="form-control" id="" placeholder="Votre nom">

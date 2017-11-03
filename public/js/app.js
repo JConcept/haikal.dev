@@ -31772,7 +31772,7 @@ $(function () {
 /* 36 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: ModuleBuildError: Module build failed: \r\n@import \"evenements\"\r\n^\r\n      File to import not found or unreadable: evenements.\nParent style sheet: C:/wamp64/www/haikal.dev/resources/assets/sass/style/_style.sass\r\n      in C:\\wamp64\\www\\haikal.dev\\resources\\assets\\sass\\style\\_style.sass (line 15, column 1)\n    at runLoaders (C:\\wamp64\\www\\haikal.dev\\node_modules\\webpack\\lib\\NormalModule.js:195:19)\n    at C:\\wamp64\\www\\haikal.dev\\node_modules\\loader-runner\\lib\\LoaderRunner.js:364:11\n    at C:\\wamp64\\www\\haikal.dev\\node_modules\\loader-runner\\lib\\LoaderRunner.js:230:18\n    at context.callback (C:\\wamp64\\www\\haikal.dev\\node_modules\\loader-runner\\lib\\LoaderRunner.js:111:13)\n    at Object.asyncSassJobQueue.push [as callback] (C:\\wamp64\\www\\haikal.dev\\node_modules\\sass-loader\\lib\\loader.js:55:13)\n    at Object.<anonymous> (C:\\wamp64\\www\\haikal.dev\\node_modules\\async\\dist\\async.js:2244:31)\n    at Object.callback (C:\\wamp64\\www\\haikal.dev\\node_modules\\async\\dist\\async.js:906:16)\n    at options.error (C:\\wamp64\\www\\haikal.dev\\node_modules\\node-sass\\lib\\index.js:294:32)");
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

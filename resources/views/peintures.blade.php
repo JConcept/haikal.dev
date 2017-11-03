@@ -20,11 +20,13 @@
 				{{--  <!-- Tab panes -->  --}}
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="nouvelles">
+
 						{{--  <!-- Modal -->  --}}
 						<div id="myModal" class="modal fade" role="dialog">
 							<div class="modal-dialog modal-content">
 								<header class="modal-header">
 									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									{{--  @TODO : Ajouter les flèches précédent suivant  --}}
 								</header>
 								<section class="modal-body">
 									<img src="./img/peintures/tableau (1).jpg" alt="">
@@ -35,6 +37,7 @@
 									<button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
 								</footer>
 							</div>
+
 						</div>
 						<div class="wrapper">
 							<section class="column" data-toggle="modal" data-target="#myModal">

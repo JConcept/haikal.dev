@@ -46,7 +46,7 @@
 			</li>
 			<li id="nav-evenement">
 				<a href="./evenements">
-					<i class="glyphicon glyphicon-blackboard"></i>
+					<i class="glyphicon glyphicon-calendar"></i>
 					<span class="nav-label">Évènements</span>
 				</a>
 			</li>
