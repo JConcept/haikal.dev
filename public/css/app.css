@@ -6850,6 +6850,22 @@ a.callToAction {
   margin: 10px auto;
 }
 
+.linkedIn .a {
+  fill: #5883a0;
+}
+
+.youtube .a {
+  fill: #c84245;
+}
+
+a:hover .linkedIn .a {
+  fill: #46687f;
+}
+
+a:hover .youtube .a {
+  fill: #a73033;
+}
+
 @media (max-width: 705px) {
   span.callToAction,
   div.callToAction {
@@ -7212,22 +7228,6 @@ header #container-logo #Nelly-Haikal {
       -ms-flex-align: stretch;
           align-items: stretch;
   margin: 15px;
-}
-
-#index #presentation #presentation-content #social-link .linkedIn .a {
-  fill: #5883a0;
-}
-
-#index #presentation #presentation-content #social-link .youtube .a {
-  fill: #c84245;
-}
-
-#index #presentation #presentation-content #social-link a:hover .linkedIn .a {
-  fill: #46687f;
-}
-
-#index #presentation #presentation-content #social-link a:hover .youtube .a {
-  fill: #a73033;
 }
 
 @media (max-width: 860px) {
@@ -7733,6 +7733,27 @@ html {
   }
   #biographie #parcours article .content h4 {
     margin-top: 5px;
+    text-align: center;
+  }
+}
+
+#biographie #linkedin {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+#biographie #linkedin .pull-right {
+  padding-top: 8%;
+}
+
+@media (max-width: 400px) {
+  #biographie #linkedin svg {
+    display: block;
+    margin: 0 auto;
+  }
+  #biographie #linkedin .pull-right {
+    display: inherit;
+    float: none !important;
     text-align: center;
   }
 }

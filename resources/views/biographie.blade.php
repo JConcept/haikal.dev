@@ -36,13 +36,15 @@
 				<section id="parcours">
 					<h3 role="heading" aria-level="3" class="h-center">Parcours</h3>
 					{{--  (article.parcour>(div.calendar>img[src='./img/agenda.svg' alt="image décorative de calendrier" width="100"]+p{Aout 93})+div.content>h4[role="heading" aria-level="4"]{Le 5 aout 1993}+p{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dui ex, mollis quis lectus a, vehicula cursus nulla. Donec in scelerisque quam, vitae pulvinar magna. Cras placerat consectetur.})*3  --}}
+					
+					{{--  @TODO : Animer SVG et faire un effet de fondu au scroll (+animation de la ligne pointillée ?)  --}}
 					<article class="parcour">
 						<div class="calendar">
 							<img class="pull-right" width="100" src="./img/agenda.svg" alt="image décorative de calendrier">
-							<p>Aout 93</p>
+							<p>Janvier 07</p>
 						</div>
 						<div class="content pull-left">
-							<h4 role="heading" aria-level="4">Le 5 août 1993</h4>
+							<h4 role="heading" aria-level="4">Le 1<sup>er</sup> janvier 2007</h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dui ex, mollis quis lectus a, vehicula cursus nulla. Donec in scelerisque quam, vitae pulvinar magna. Cras placerat consectetur.</p>
 						</div>
 						<div class="clear"></div>
@@ -61,15 +63,22 @@
 					<article class="parcour">
 						<div class="calendar">
 							<img class="pull-right" width="100" src="./img/agenda.svg" alt="image décorative de calendrier">
-							<p>Janvier 07</p>
+							<p>Aout 93</p>
 						</div>
 						<div class="content pull-left">
-							<h4 role="heading" aria-level="4">Le 1<sup>er</sup> janvier 2007</h4>
+							<h4 role="heading" aria-level="4">Le 5 août 1993</h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dui ex, mollis quis lectus a, vehicula cursus nulla. Donec in scelerisque quam, vitae pulvinar magna. Cras placerat consectetur.</p>
 						</div>
 						<div class="clear"></div>
 					</article>
 				</section>
+				
+					<div id="linkedin">
+						<a href="#">
+							<?php echo file_get_contents("img/socialLinkedIn.svg"); ?>
+						</a>
+						<a href="./peintures" class="pull-right">Retrouvez moi sur LinkedIn</a>
+					</div>
 				{{--  <!-- FIN section-2 démarche -->  --}}
 		</section>
 	@endsection

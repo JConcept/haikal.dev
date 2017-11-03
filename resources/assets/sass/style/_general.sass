@@ -32,6 +32,18 @@ div.callToAction
 a.callToAction
 	display: block
 	margin: 10px auto
+
+// Icones
+.linkedIn .a
+	fill: $linkedIn
+.youtube .a
+	fill: $youtube
+a:hover 
+	.linkedIn .a
+		fill: darken($linkedIn, 10%)
+	.youtube .a
+		fill: darken($youtube, 10%)
+
 @media (max-width:705px)
 	span.callToAction,
 	div.callToAction
