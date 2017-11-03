@@ -1,12 +1,14 @@
 @php
-	$bodyId = 'expositions';
-	$title = 'Expositions';
+	$bodyId = 'evenement';
+	$title = 'Évènements';
 @endphp
 @extends('layouts.main')
 	@section('content')
 		<section>
 			<h2 role="heading" aria-level="2">Évènements</h2>
 			
+			{{--  @TODO : Implémenter les évènements Facebook avec l'api  --}}
+
 			{{--  <!-- DÉBUT agenda  -->  --}}
 			<div class="agenda">
 				<div class="table-responsive">

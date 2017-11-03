@@ -44,8 +44,8 @@
 					</li>
 				</ul>
 			</li>
-			<li id="nav-expositions">
-				<a href="./expositions">
+			<li id="nav-evenement">
+				<a href="./evenements">
 					<i class="glyphicon glyphicon-blackboard"></i>
 					<span class="nav-label">Évènements</span>
 				</a>

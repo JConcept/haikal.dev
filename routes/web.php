@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/','HomeController@index') -> name('home');
+Route::get('/', 'HomeController@index') -> name('home');
 
 Route::get('/biographie', function () {
     return view('biographie');
@@ -19,8 +19,8 @@ Route::get('/biographie', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
-Route::get('/expositions', function () {
-    return view('expositions');
+Route::get('/evenements', function () {
+    return view('evenements');
 });
 Route::get('/galerie', function () {
     return view('galerie');
