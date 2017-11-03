@@ -1,5 +1,7 @@
 <nav id="navMenu">
+	<h2 class="hidden" role="heading" aria-level="2">Menu</h2>
 	<aside class="menu-close">
+		<h3 class="hidden" role="heading" aria-level="3">Nav</h3>
 		<ul>
 			<li id="nav-menu">
 				<a href="#" class="button-left">
@@ -45,7 +47,7 @@
 			<li id="nav-expositions">
 				<a href="./expositions">
 					<i class="glyphicon glyphicon-blackboard"></i>
-					<span class="nav-label">Expositions</span>
+					<span class="nav-label">Évènements</span>
 				</a>
 			</li>
 			<li id="nav-biographie">
