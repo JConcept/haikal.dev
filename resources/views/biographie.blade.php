@@ -21,7 +21,7 @@
 		
 				{{--  <!-- DÉBUT section-2 démarche -->  --}}
 				<section id="demarche">
-					<h3 role="heading" aria-level="3">Démarche</h3>
+					<h3 role="heading" aria-level="3" class="h-right">Démarche</h3>
 					<img id="artiste2" width="150" src="{{ url('img/nelly-2.jpg') }}" alt="Photo de l'artiste peintre Nelly Haikal">
 					<p>
 						Munie de mon appareil photo et de ma caméra, je capte des paysages qui me touchent et dans lesquels je construis une vie. De retour dans mon atelier je structure mes images dans un format personnel, dégageant un espace qui respire, et inspire l’imaginaire.
@@ -32,6 +32,43 @@
 					<p>
 						Lors d’un cours sur la beauté, je me souviens avoir dit que la beauté est ce qui est vrai, ce qui touche les sensibilités. Ma démarche est semblable. Je montre ce qui me touche et m’envahit. 
 					</p>
+				</section>
+				<section id="parcours">
+					<h3 role="heading" aria-level="3" class="h-center">Parcours</h3>
+					{{--  (article.parcour>(div.calendar>img[src='./img/agenda.svg' alt="image décorative de calendrier" width="100"]+p{Aout 93})+div.content>h4[role="heading" aria-level="4"]{Le 5 aout 1993}+p{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dui ex, mollis quis lectus a, vehicula cursus nulla. Donec in scelerisque quam, vitae pulvinar magna. Cras placerat consectetur.})*3  --}}
+					<article class="parcour">
+						<div class="calendar">
+							<img class="pull-right" width="100" src="./img/agenda.svg" alt="image décorative de calendrier">
+							<p>Aout 93</p>
+						</div>
+						<div class="content pull-left">
+							<h4 role="heading" aria-level="4">Le 5 août 1993</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dui ex, mollis quis lectus a, vehicula cursus nulla. Donec in scelerisque quam, vitae pulvinar magna. Cras placerat consectetur.</p>
+						</div>
+						<div class="clear"></div>
+					</article>
+					<article class="parcour">
+						<div class="calendar">
+							<img class="pull-left" width="100" src="./img/agenda.svg" alt="image décorative de calendrier">
+							<p>Septembre 95</p>
+						</div>
+						<div class="content pull-right">
+							<h4 role="heading" aria-level="4">Le 9 septembre 1995</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dui ex, mollis quis lectus a, vehicula cursus nulla. Donec in scelerisque quam, vitae pulvinar magna. Cras placerat consectetur.</p>
+						</div>
+						<div class="clear"></div>
+					</article>
+					<article class="parcour">
+						<div class="calendar">
+							<img class="pull-right" width="100" src="./img/agenda.svg" alt="image décorative de calendrier">
+							<p>Janvier 07</p>
+						</div>
+						<div class="content pull-left">
+							<h4 role="heading" aria-level="4">Le 1<sup>er</sup> janvier 2007</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dui ex, mollis quis lectus a, vehicula cursus nulla. Donec in scelerisque quam, vitae pulvinar magna. Cras placerat consectetur.</p>
+						</div>
+						<div class="clear"></div>
+					</article>
 				</section>
 				{{--  <!-- FIN section-2 démarche -->  --}}
 		</section>

@@ -7638,6 +7638,14 @@ html {
   width: 140px;
 }
 
+#biographie .h-right {
+  text-align: right;
+}
+
+#biographie .h-center {
+  text-align: center;
+}
+
 #biographie section section {
   max-width: 745px;
   margin: 20px auto;
@@ -7667,6 +7675,66 @@ html {
   height: auto;
   float: left;
   margin: 0 10px 5px 0;
+}
+
+#biographie #parcours article {
+  position: relative;
+}
+
+#biographie #parcours article::before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20px;
+  margin: 0 auto;
+  width: 1px;
+  height: 100%;
+  border-left: 1px dashed #D11919;
+  content: "";
+  z-index: -1;
+}
+
+#biographie #parcours article:last-child::before {
+  border: none;
+}
+
+#biographie #parcours article .calendar {
+  position: relative;
+  width: 120px;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+#biographie #parcours article .calendar p {
+  position: absolute;
+  top: 46px;
+  left: 14px;
+  right: 16px;
+  text-align: center;
+}
+
+#biographie #parcours article .content {
+  width: 40%;
+  text-align: left;
+}
+
+#biographie #parcours article .content h4 {
+  margin-top: 17px;
+}
+
+@media (max-width: 600px) {
+  #biographie #parcours article:not(:last-child) {
+    padding-bottom: 40px;
+  }
+  #biographie #parcours article .content {
+    width: 100%;
+    background-color: #ededed;
+    margin-top: 10px;
+  }
+  #biographie #parcours article .content h4 {
+    margin-top: 5px;
+    text-align: center;
+  }
 }
 
 #contact form {

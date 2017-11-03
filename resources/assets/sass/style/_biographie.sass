@@ -2,6 +2,10 @@
 // /*   BIOGRAPHIE   */
 // /******************/
 #biographie 
+	.h-right
+		text-align: right
+	.h-center
+		text-align: center
 	section section
 		max-width: 745px
 		margin: 20px auto
@@ -23,3 +27,46 @@
 			height: auto
 			float: left
 			margin: 0 10px 5px 0
+	#parcours
+		article
+			position: relative
+			&::before
+				position: absolute
+				left: 0
+				right: 0
+				top: 20px
+				margin: 0 auto;
+				width: 1px
+				height: 100%
+				border-left: 1px dashed $jc-red
+				content: ""
+				z-index: -1
+			&:last-child::before
+				border: none
+			.calendar
+				position: relative
+				width: 120px
+				margin: 0 auto
+				z-index: 10
+				p
+					position: absolute
+					top: 46px;
+					left: 14px;
+					right: 16px;
+					text-align: center;
+			.content
+				width: 40%;
+				text-align: left;
+				h4
+					margin-top: 17px
+			@media (max-width: 600px)
+				&:not(:last-child)
+					padding-bottom: 40px
+				.content
+					width: 100%
+					background-color: $body-bg
+					margin-top: 10px
+					h4
+						margin-top: 5px
+						text-align: center
+

@@ -5,7 +5,7 @@
 @extends('layouts.main')
 	@section('content')
 		<section>
-			<h2 role="heading" aria-level="2">Expositions</h2>
+			<h2 role="heading" aria-level="2">Évènements</h2>
 			
 			{{--  <!-- DÉBUT agenda  -->  --}}
 			<div class="agenda">
