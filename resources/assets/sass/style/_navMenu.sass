@@ -1,0 +1,104 @@
+// /*********/
+// /*  NAV  */
+// /*********/
+
+// Mixins
+=sidebar-calculate($sidebar-width)
+	width: calc(100% - $sidebar-width)
+	margin-left: $sidebar-width
+
+// Var
+$sidebar-width: 180px
+$sidebar-min-width: 47px
+$menu-bg: $jc-bg-dark
+$sub-menu-bg: lighten($menu-bg, 4%)
+$transition: all 0.5s ease-in-out
+
+// Code 
+.main
+	position: relative
+	transition: $transition
+	@media (min-width: 360px)
+		+sidebar-calculate($sidebar-width)
+	&.menu-close
+		+sidebar-calculate($sidebar-min-width)
+		transition: $transition
+#navMenu
+	margin-right: 15px
+	position: fixed
+	// overflow-y: auto
+	// overflow-x: hidden
+	// overflow-x: auto
+	height: 100%
+	background-color: $menu-bg
+	z-index: 1001
+	aside
+		width: $sidebar-width
+		transition: $transition
+		.glyphicon-chevron-left
+			position: absolute
+			right: 10px;
+			top: 1px;
+			&:before
+				transition: $transition
+				transition-delay: .3s
+		ul
+			list-style: none 
+			margin: 0px 
+			padding: 0px 
+			[aria-expanded="true"] .glyphicon-chevron-left
+				transform: rotateZ(-90deg)
+			li
+				position: relative
+				a
+					display: block 
+					width: 100%
+					padding: 10px 10px 
+					color: $gray-lighter 
+					border-left: 0px solid $gray-lighter  
+					text-decoration: none
+					border-left: 5px solid transparent
+					transition: $transition
+					padding-right: 15px
+					.nav-label
+						position: absolute;
+						left: 45px;
+						right: 10px;
+						transition: $transition
+					&.active
+						border-left: 5px solid $gray-lighter 
+						transition: $transition
+					&:hover
+						background-color: darken($menu-bg, 5%)
+					i
+						padding-right: 5px
+				li a
+					position: relative
+					border-left: none
+					transition: $transition
+					background-color: $sub-menu-bg
+					border-left: 5px solid $jc-blue
+					&:hover
+						background-color: $menu-bg
+						padding-left: 20px 
+						transition: $transition
+						border-left: 5px solid darken($jc-blue, 40%)
+		&.menu-close 
+			width: $sidebar-min-width
+			transition: $transition
+			// .user-panel
+			//     display: none 
+			li
+				a .nav-label
+					color: transparent
+					transition: $transition
+					.glyphicon-chevron-left::before
+						// transition: all .2s ease-in-out
+						transition-delay: 0s
+				ul
+					position: absolute
+					left: 39px
+					top: 0
+					background-color: $sub-menu-bg
+					width: 150px
+					z-index: 100
