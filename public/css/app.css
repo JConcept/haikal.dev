@@ -6797,6 +6797,15 @@ button.close {
  * Copyright 2016-2018 JConcept.be.
  * Licensed under MIT (https://github.com/.../LICENSE)
  */
+::-moz-selection {
+  background: #FF0000;
+  color: #FFF;
+}
+::selection {
+  background: #FF0000;
+  color: #FFF;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -6830,6 +6839,10 @@ section section {
   clear: both;
 }
 
+.hidden {
+  display: none;
+}
+
 span.callToAction,
 div.callToAction {
   display: -webkit-box;
@@ -6850,12 +6863,20 @@ a.callToAction {
   margin: 10px auto;
 }
 
+header #container-logo #svg #e .primary, header #container-logo #svg #b .primary {
+  stop-color: #D11919;
+}
+
+header #container-logo #svg #e .secondary, header #container-logo #svg #b .secondary {
+  stop-color: #EF5350;
+}
+
 .linkedIn .a {
   fill: #5883a0;
 }
 
 .youtube .a {
-  fill: #c84245;
+  fill: #FF0000;
 }
 
 a:hover .linkedIn .a {
@@ -6863,7 +6884,7 @@ a:hover .linkedIn .a {
 }
 
 a:hover .youtube .a {
-  fill: #a73033;
+  fill: #cc0000;
 }
 
 @media (max-width: 705px) {
@@ -7093,7 +7114,7 @@ header #container-logo #Nelly-Haikal {
 
 #general-footer .footer-bckg {
   height: 30px;
-  background: radial-gradient(400px at 50% 99px, #f06360 17%, #D11919 84%);
+  background: radial-gradient(400px at 50% 99px, #EF5350 17%, #D11919 84%);
   margin-bottom: 0px;
   margin-top: 8px;
 }

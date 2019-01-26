@@ -1,16 +1,19 @@
 // /*************/
 // /*  GENERAL  */
 // /*************/
+::selection
+	background: #FF0000
+	color: #FFF
 body
 	overflow-x: hidden
 h2
 	padding-top: 110px
 	text-align: center
 	font-weight: 900
-	color: $jc-red
+	color: $jc-brand
 h3
 	color: $jc-blue
-	margin-top: 40px;
+	margin-top: 40px
 img
 	max-width: 100%
 section
@@ -21,7 +24,7 @@ section
 .clear
 	clear: both
 .hidden
-	display:none
+	display: none
 span.callToAction, // Dans le cas des deux boutons 
 div.callToAction
 	display: flex
@@ -34,6 +37,11 @@ a.callToAction
 	margin: 10px auto
 
 // Icones
+header #container-logo #svg #e, header #container-logo #svg #b
+	.primary
+		stop-color: $jc-brand
+	.secondary
+		stop-color: $jc-brand-sec
 .linkedIn .a
 	fill: $linkedIn
 .youtube .a

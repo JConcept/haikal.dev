@@ -6,12 +6,12 @@
 					<rect width="252" height="142" transform="translate(1360 1)" />
 				</clipPath>
 				<radialGradient id="b">
-					<stop offset="17%" stop-color="#EF8A60" />
-					<stop offset="84%" stop-color="#D11919" />
+					<stop offset="17%" class="secondary" stop-color="#EF8A60" />
+					<stop offset="84%" class="primary" stop-color="#D11919" />
 				</radialGradient>
 				<radialGradient id="e" r="1"> 
-					<stop offset="17%" stop-color="#EF5350" />
-					<stop offset="84%" stop-color="#D11919" />
+					<stop offset="17%" class="secondary" stop-color="#EF5350" />
+					<stop offset="84%" class="primary" stop-color="#D11919" />
 				</radialGradient>
 			</defs>
 			<g transform="translate(-633 -817.396)">
@@ -22,6 +22,6 @@
 				</g>
 			</g>
 		</svg>
-		<h1  role="heading" aria-level="1" id="Nelly-Haikal">Nelly <strong>Haikal</strong></h1>
+		<a href="/"><h1  role="heading" aria-level="1" id="Nelly-Haikal">Nelly <strong>Haikal</strong></h1></a>
 	</div>
 </header>
