@@ -35,12 +35,12 @@
 				</section>
 				<section id="parcours">
 					<h3 role="heading" aria-level="3" class="h-center">Parcours</h3>
-					{{--  (article.parcour>(div.calendar>img[src='./img/agenda.svg' alt="image décorative de calendrier" width="100"]+p{Aout 93})+div.content>h4[role="heading" aria-level="4"]{Le 5 aout 1993}+p{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dui ex, mollis quis lectus a, vehicula cursus nulla. Donec in scelerisque quam, vitae pulvinar magna. Cras placerat consectetur.})*3  --}}
+					{{--  (article.parcour>(div.calendar>img[src='/img/agenda.svg' alt="image décorative de calendrier" width="100"]+p{Aout 93})+div.content>h4[role="heading" aria-level="4"]{Le 5 aout 1993}+p{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dui ex, mollis quis lectus a, vehicula cursus nulla. Donec in scelerisque quam, vitae pulvinar magna. Cras placerat consectetur.})*3  --}}
 					
 					{{--  @TODO : Animer SVG et faire un effet de fondu au scroll (+animation de la ligne pointillée ?)  --}}
 					<article class="parcour">
 						<div class="calendar">
-							<img class="pull-right" width="100" src="./img/agenda.svg" alt="image décorative de calendrier">
+							<img class="pull-right" width="100" src="/img/agenda.svg" alt="image décorative de calendrier">
 							<p>Janvier 07</p>
 						</div>
 						<div class="content pull-left">
@@ -51,7 +51,7 @@
 					</article>
 					<article class="parcour">
 						<div class="calendar">
-							<img class="pull-left" width="100" src="./img/agenda.svg" alt="image décorative de calendrier">
+							<img class="pull-left" width="100" src="/img/agenda.svg" alt="image décorative de calendrier">
 							<p>Septembre 95</p>
 						</div>
 						<div class="content pull-right">
@@ -62,7 +62,7 @@
 					</article>
 					<article class="parcour">
 						<div class="calendar">
-							<img class="pull-right" width="100" src="./img/agenda.svg" alt="image décorative de calendrier">
+							<img class="pull-right" width="100" src="/img/agenda.svg" alt="image décorative de calendrier">
 							<p>Aout 93</p>
 						</div>
 						<div class="content pull-left">

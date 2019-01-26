@@ -6863,11 +6863,11 @@ a.callToAction {
   margin: 10px auto;
 }
 
-header #container-logo #svg #e .primary, header #container-logo #svg #b .primary {
+#container-logo #svg #e .primary, #container-logo #svg #b .primary {
   stop-color: #D11919;
 }
 
-header #container-logo #svg #e .secondary, header #container-logo #svg #b .secondary {
+#container-logo #svg #e .secondary, #container-logo #svg #b .secondary {
   stop-color: #EF5350;
 }
 
