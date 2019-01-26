@@ -36,8 +36,8 @@
 						Peintre figurative travaillant en atelier et traitant des scènes de rue et des figures humaines expressives. Autres créations, les  incrustations  photographiques dans les peintures, la photographie et les impressions photo selon les techniques alternatives utilisant des pigments,  travaille dans un atelier situé au 37 rue Fraigneux à 4000 Liège.<br>
 						Depuis 2016 en association de fait  avec un collectif d’artistes «&nbsp;MEzZe&nbsp;».<br>
 						<span class="callToAction" class="row">
-							<a href="./peintures" class="btn btn-primary pull-left col-md-6 col-sm-6 col-xs-12">Voir mes peintures</a>
-							<a href="./biographie" class="btn btn-primary pull-right col-md-6 col-sm-6 col-xs-12">En savoir plus</a>
+							<a href="/galerie/peintures" class="btn btn-primary pull-left col-md-6 col-sm-6 col-xs-12">Voir mes peintures</a>
+							<a href="/biographie" class="btn btn-primary pull-right col-md-6 col-sm-6 col-xs-12">En savoir plus</a>
 						</span>
 					</p>
 					<div id="social-link">

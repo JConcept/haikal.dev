@@ -25,12 +25,12 @@ Route::get('/evenements', function () {
 Route::get('/galerie', function () {
     return view('galerie');
 });
-Route::get('/peintures', function () {
+Route::get('/galerie/peintures', function () {
     return view('peintures');
 });
-Route::get('/photos', function () {
+Route::get('/galerie/photos', function () {
     return view('photos');
 });
-Route::get('/videos', function () {
+Route::get('/galerie/videos', function () {
     return view('videos');
 });

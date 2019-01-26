@@ -7016,6 +7016,10 @@ a:hover .youtube .a {
   z-index: 100;
 }
 
+#navMenu .button-left, #navMenu #nav-galerie {
+  cursor: pointer;
+}
+
 header #container-logo {
   display: inline-block;
   position: absolute;

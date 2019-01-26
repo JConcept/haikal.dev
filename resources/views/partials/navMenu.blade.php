@@ -4,19 +4,19 @@
 		<h3 class="hidden" role="heading" aria-level="3">Nav</h3>
 		<ul>
 			<li id="nav-menu">
-				<a href="#" class="button-left">
+				<a class="button-left">{{--  @TODO : ajouter href quand le lien sauvegarde position sidebar + changer dans sass  --}}
 					<i class="glyphicon glyphicon-menu-hamburger"></i>
 					<span class="nav-label">Menu</span>
 				</a>
 			</li>
 			<li id="nav-index">
-				<a href="./">
+				<a href="/">
 					<i class="glyphicon glyphicon-home"></i>
 					<span class="nav-label">Accueil</span>
 				</a>
 			</li>
 			<li>
-				<a id="nav-galerie" href="#" class="collapsed" data-toggle="collapse" data-target="#sub-galerie">
+				<a id="nav-galerie" class="collapsed" data-toggle="collapse" data-target="#sub-galerie">
 					<i class="glyphicon glyphicon-th-large">{{--  <!-- book -->  --}}</i>
 					<span class="nav-label">
 						Galerie
@@ -25,19 +25,19 @@
 				</a>
 				<ul class="collapse" role="sub-menu" id="sub-galerie">
 					<li id="nav-peintures">
-						<a href="./peintures">
+						<a href="/galerie/peintures">
 							Peintures
 							<i class="glyphicon glyphicon-blackboard pull-right"></i>
 						</a>
 					</li>
 					<li id="nav-photos">
-						<a href="./photos">
+						<a href="/galerie/photos">
 							Photos 
 							<i class="glyphicon glyphicon-picture pull-right">{{--  <!--camera-->  --}}</i>
 						</a>
 					</li>
 					<li id="nav-videos">
-						<a href="./videos">
+						<a href="/galerie/videos">
 							Vidéos
 							<i class="glyphicon glyphicon-film pull-right"></i>
 						</a>
@@ -45,13 +45,13 @@
 				</ul>
 			</li>
 			<li id="nav-evenement">
-				<a href="./evenements">
+				<a href="/evenements">
 					<i class="glyphicon glyphicon-calendar"></i>
 					<span class="nav-label">Évènements</span>
 				</a>
 			</li>
 			<li id="nav-biographie">
-				<a href="./biographie">
+				<a href="/biographie">
 					<i class="glyphicon glyphicon-education"></i>
 					<span class="nav-label">Biographie</span>
 				</a>
@@ -69,7 +69,7 @@
 				</a>
 			</li> -->  --}}
 			<li id="nav-contact">
-				<a href="./contact">
+				<a href="/contact">
 					<i class="glyphicon glyphicon-envelope"></i>
 					<span class="nav-label">Contact</span>
 				</a>
