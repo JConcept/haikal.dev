@@ -39,9 +39,9 @@ $transition: all 0.5s ease-in-out
 			position: absolute
 			right: 10px;
 			top: 1px;
-			&:before
-				transition: $transition
-				transition-delay: .3s
+			// &:before
+			// 	transition: $transition
+				// transition-delay: .1s
 		ul
 			list-style: none 
 			margin: 0px 
@@ -90,6 +90,7 @@ $transition: all 0.5s ease-in-out
 			//     display: none 
 			li
 				a .nav-label
+					left: -1000px
 					color: transparent
 					transition: $transition
 					.glyphicon-chevron-left::before

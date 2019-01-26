@@ -74,10 +74,10 @@
 				</section>
 				
 					<div id="linkedin">
-						<a href="#">
+						<a href="https://www.linkedin.com/in/nelly-haikal-4443a469/" target="_blank">
 							<?php echo file_get_contents("img/socialLinkedIn.svg"); ?>
 						</a>
-						<a href="./peintures" class="pull-right">Retrouvez moi sur LinkedIn</a>
+						<a href="https://www.linkedin.com/in/nelly-haikal-4443a469/" target="_blank" class="pull-right">Retrouvez moi sur LinkedIn</a>
 					</div>
 				{{--  <!-- FIN section-2 démarche -->  --}}
 		</section>

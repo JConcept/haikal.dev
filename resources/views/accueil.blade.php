@@ -41,10 +41,10 @@
 						</span>
 					</p>
 					<div id="social-link">
-						<a href="#">
+						<a href="https://www.linkedin.com/in/nelly-haikal-4443a469/" target="_blank">
 							<?php echo file_get_contents("img/socialLinkedIn.svg"); ?>
 						</a>
-						<a href="#">
+						<a href="#@TODO" target="_blank">
 							<?php echo file_get_contents("img/socialYouTube.svg"); ?>
 						</a>
 					</div>

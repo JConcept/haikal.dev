@@ -6,7 +6,7 @@
 	@section('content')
 		<section>
 			<h2 role="heading" aria-level="2">Photos</h3>
-				<div class="row">
+				{{--  <div class="row">  --}}
 					<div role="tabpanel">
 						{{--  <!-- Nav tabs -->  --}}
 						<ul class="nav nav-tabs" role="tablist">
@@ -23,7 +23,7 @@
 							<div role="tabpanel" class="tab-pane active" id="couleur">
 								
 								<article class="col-sm-6 col-lg-3">
-									<h3>Titre 1</h3>
+									<h3>Titre</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione consequatur tenetur sequi voluptatem reiciendis inventore laborum non aperiam quibusdam unde, laudantium at optio nihil. Optio quas quis eius illo ut.</p>
 									{{--  <!-- DÉBUT caroussel -->   --}}
 									<div id="carousel1" class="carousel slide" data-ride="carousel">
@@ -86,7 +86,7 @@
 								</article>
 								
 								<article class="col-sm-6 col-lg-3">
-									<h3>Titre 2</h3>
+									<h3>Titre</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione consequatur tenetur sequi voluptatem reiciendis inventore laborum non aperiam quibusdam unde, laudantium at optio nihil. Optio quas quis eius illo ut.</p>
 									{{--  <!-- DÉBUT caroussel -->   --}}
 									<div id="carousel2" class="carousel slide" data-ride="carousel">
@@ -134,7 +134,7 @@
 								</article>
 								
 								<article class="col-sm-6 col-lg-3">
-									<h3>Titre 2</h3>
+									<h3>Titre</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione consequatur tenetur sequi voluptatem reiciendis inventore laborum non aperiam quibusdam unde, laudantium at optio nihil. Optio quas quis eius illo ut.</p>
 									{{--  <!-- DÉBUT caroussel -->   --}}
 									<div id="carousel3" class="carousel slide" data-ride="carousel">
@@ -152,13 +152,13 @@
 											</div>
 											<style>
 												#carousel3 #ca-1{
-													background: url('http://lorempixel.com/output/abstract-q-c-1000-400-5.jpg') no-repeat center;
+													background: url('http://lorempixel.com/1000/400/') no-repeat center;
 												}
 												#carousel3 #ca-2{
-													background: url('http://lorempixel.com/output/abstract-q-c-1000-400-6.jpg') no-repeat center;
+													background: url('http://lorempixel.com/1001/400/') no-repeat center;
 												}
 												#carousel3 #ca-3{
-													background: url('http://lorempixel.com/output/abstract-q-c-1000-400-7.jpg') no-repeat center;
+													background: url('http://lorempixel.com/1002/400/') no-repeat center;
 												}
 											</style>
 										</div>
@@ -170,7 +170,7 @@
 								</article>
 								
 								<article class="col-sm-6 col-lg-3">
-									<h3>Titre 2</h3>
+									<h3>Titre</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione consequatur tenetur sequi voluptatem reiciendis inventore laborum non aperiam quibusdam unde, laudantium at optio nihil. Optio quas quis eius illo ut.</p>
 									{{--  <!-- DÉBUT caroussel -->   --}}
 									<div id="carousel4" class="carousel slide" data-ride="carousel">
@@ -188,13 +188,13 @@
 											</div>
 											<style>
 												#carousel4 #ca-1{
-													background: url('http://lorempixel.com/output/abstract-q-c-1000-400-5.jpg') no-repeat center;
+													background: url('http://lorempixel.com/1003/400/') no-repeat center;
 												}
 												#carousel4 #ca-2{
-													background: url('http://lorempixel.com/output/abstract-q-c-1000-400-6.jpg') no-repeat center;
+													background: url('http://lorempixel.com/1004/400/') no-repeat center;
 												}
 												#carousel4 #ca-3{
-													background: url('http://lorempixel.com/output/abstract-q-c-1000-400-7.jpg') no-repeat center;
+													background: url('http://lorempixel.com/1005/400/') no-repeat center;
 												}
 											</style>
 										</div>
@@ -208,7 +208,7 @@
 							</div>
 							<div role="tabpanel" class="tab-pane" id="noir-blanc">
 								<article class="col-sm-6 col-lg-3">
-									<h3>Titre 1</h3>
+									<h3>Titre</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione consequatur tenetur sequi voluptatem reiciendis inventore laborum non aperiam quibusdam unde, laudantium at optio nihil. Optio quas quis eius illo ut.</p>
 									{{--  <!-- DÉBUT caroussel -->   --}}
 									<div id="carousel5" class="carousel slide" data-ride="carousel">
@@ -254,9 +254,45 @@
 									{{--  <!-- FIN caroussel -->  --}}
 									<a href="" class="callToAction btn btn-primary">En voir plus</a>
 								</article>
+								<article class="col-sm-6 col-lg-3">
+									<h3>Titre</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione consequatur tenetur sequi voluptatem reiciendis inventore laborum non aperiam quibusdam unde, laudantium at optio nihil. Optio quas quis eius illo ut.</p>
+									{{--  <!-- DÉBUT caroussel -->   --}}
+									<div id="carousel6" class="carousel slide" data-ride="carousel">
+										<ol class="carousel-indicators">
+											<li data-target="#carousel6" data-slide-to="0" class="active"></li>
+											<li data-target="#carousel6" data-slide-to="1" class=""></li>
+											<li data-target="#carousel6" data-slide-to="2" class=""></li>
+										</ol>
+										<div class="carousel-inner">
+											<div class="item active" id="ca-1">
+											</div>
+											<div class="item" id="ca-2">
+											</div>
+											<div class="item" id="ca-3">
+											</div>
+											<style>
+												#carousel6 #ca-1{
+													background: url('http://lorempixel.com/g/1006/400/') no-repeat center;
+												}
+												#carousel6 #ca-2{
+													background: url('http://lorempixel.com/g/1007/400/') no-repeat center;
+												}
+												#carousel6 #ca-3{
+													background: url('http://lorempixel.com/g/1008/400/') no-repeat center;
+												}
+											</style>
+										</div>
+										<a class="left carousel-control" href="#carousel6" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+										<a class="right carousel-control" href="#carousel6" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+									</div>
+									{{--  <!-- FIN caroussel -->  --}}
+									<a href="" class="callToAction btn btn-primary">En voir plus</a>
+								</article>
+								<div class="clear">&nbsp;</div>
 							</div>
 						</div>
 					</div>
-				</div>
+				{{--  </div>  --}}
 		</section>
 	@endsection
