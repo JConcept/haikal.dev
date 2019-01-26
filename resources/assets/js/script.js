@@ -1,28 +1,26 @@
 // NAV MENU
-$(document).ready(function () {
-	$('.button-left').click(function () {
-		$('aside').toggleClass('menu-close');
-		$('.main').toggleClass('menu-close');
-		$('#navMenu li a').addClass('collapsed');
-		$('#navMenu li a').setAttribute('aria-expanded', 'false');
-		// $('#navMenu li a').each(function () {
-		//     $(this).attr('aria-expanded', 'false')
-		// });
+	$(document).ready(function () {
+		$('.button-left').click(function () {
+			$('aside').toggleClass('menu-close');
+			$('.main').toggleClass('menu-close');
+			$('#navMenu li a').addClass('collapsed');
+			$('#navMenu li a').setAttribute('aria-expanded', 'false');
+			// $('#navMenu li a').each(function () {
+			//     $(this).attr('aria-expanded', 'false')
+			// });
+		});
 	});
-
-});
-function checkPosition() {
-	if (window.matchMedia("(max-width: 1330px)").matches) {
-		$('aside').addClass('menu-close');
-		$('.main').addClass('menu-close');
-	} else {
-		$('aside').removeClass('menu-close');
-		$('.main').removeClass('menu-close');
+	function checkPosition() {
+		if (window.matchMedia("(max-width: 1330px)").matches) {
+			$('aside').addClass('menu-close');
+			$('.main').addClass('menu-close');
+		} else {
+			$('aside').removeClass('menu-close');
+			$('.main').removeClass('menu-close');
+		}
 	}
-}
-window.addEventListener('resize', checkPosition, false);
-window.addEventListener('load', checkPosition, false);
-// END nav menu
+	window.addEventListener('resize', checkPosition, false);
+	window.addEventListener('load', checkPosition, false);
 
 // SLIDER
 	$('.carousel-sync').on('slide.bs.carousel', function(ev) {
@@ -60,14 +58,29 @@ window.addEventListener('load', checkPosition, false);
 	$(function(){
 		$("#carousel8").carousel();
 	});
-// END slider
 
-/*$(document).ready(function() {
-	$('#demo').pinterest_grid({
-		no_columns: 4,
-		padding_x: 10,
-		padding_y: 10,
-		margin_bottom: 50,
-		single_column_breakpoint: 700
-	});
-});*/
+// Page vidéos
+	// Loop selectors
+	var videos = document.querySelectorAll(".youtube");
+	for (var i = 0; i < videos.length; i++) {
+		var youtube = videos[i];
+		// Get function
+		getVideos(youtube);
+	}
+	// Get videos function
+	function getVideos(el) {
+		var img = document.createElement("img");
+		// Get minified images
+		img.setAttribute('src', 'http://i.ytimg.com/vi/' + el.id + '/mqdefault.jpg'); // other types : https://www.thewebtaylor.com/articles/how-to-get-a-youtube-videos-thumbnail-image-in-high-quality
+		// Insert tag
+		el.appendChild(img);
+		// On click get video
+		el.addEventListener('click', function () {
+			var iframe = document.createElement("iframe");
+			iframe.setAttribute('class', 'youtube_video');
+			iframe.setAttribute('src', 'https://www.youtube.com/embed/' +
+				this.id + '?autoplay=1&autohide=1&border=0&wmode=opaque&enablejsapi=1');
+			// Replace img for video
+			this.parentNode.replaceChild(iframe, this);
+		}, false);
+	}

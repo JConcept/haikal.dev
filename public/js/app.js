@@ -31718,7 +31718,6 @@ function checkPosition() {
 }
 window.addEventListener('resize', checkPosition, false);
 window.addEventListener('load', checkPosition, false);
-// END nav menu
 
 // SLIDER
 $('.carousel-sync').on('slide.bs.carousel', function (ev) {
@@ -31756,17 +31755,31 @@ $(function () {
 $(function () {
 	$("#carousel8").carousel();
 });
-// END slider
 
-/*$(document).ready(function() {
-	$('#demo').pinterest_grid({
-		no_columns: 4,
-		padding_x: 10,
-		padding_y: 10,
-		margin_bottom: 50,
-		single_column_breakpoint: 700
-	});
-});*/
+// Page vidéos
+// Loop selectors
+var videos = document.querySelectorAll(".youtube");
+for (var i = 0; i < videos.length; i++) {
+	var youtube = videos[i];
+	// Get function
+	getVideos(youtube);
+}
+// Get videos function
+function getVideos(el) {
+	var img = document.createElement("img");
+	// Get minified images
+	img.setAttribute('src', 'http://i.ytimg.com/vi/' + el.id + '/mqdefault.jpg'); // other types : https://www.thewebtaylor.com/articles/how-to-get-a-youtube-videos-thumbnail-image-in-high-quality
+	// Insert tag
+	el.appendChild(img);
+	// On click get video
+	el.addEventListener('click', function () {
+		var iframe = document.createElement("iframe");
+		iframe.setAttribute('class', 'youtube_video');
+		iframe.setAttribute('src', 'https://www.youtube.com/embed/' + this.id + '?autoplay=1&autohide=1&border=0&wmode=opaque&enablejsapi=1');
+		// Replace img for video
+		this.parentNode.replaceChild(iframe, this);
+	}, false);
+}
 
 /***/ }),
 /* 36 */

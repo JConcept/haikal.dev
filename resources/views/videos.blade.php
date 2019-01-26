@@ -3,66 +3,47 @@
 	$title = 'Vidéos';
 @endphp
 @extends('layouts.main')
-	@section('content')
-		<section>
-			<h2 role="heading" aria-level="2">Vidéos</h2>
-
-
-			{{--  @TODO : Implémenter le contenu via une chaine Vimeo, dailymotion ou autres service vidéo offrant une api sympa pour le faire  --}}
-
-
-			<form method="get" action="" class="btn-group">
-					<select name="photos" class="btn btn-default dropdown-toggle" data-toggle="dropdown"aria-haspopup="true" aria-expanded="false">
-					<option value="#couleur">couleur</option>
-					<option value="#noir-blanc">noir et blanc</option>
-				</select>
-			</form>				
-			{{--  <!-- DÉBUT caroussel -->   --}}
-				<div id="carousel-a" class="carousel slide carousel-sync" data-ride="carousel"data-pause="true">
-				<div class="carousel-inner">
-					<div class="item active">
-						<img src="http://lorempixel.com/output/abstract-q-c-300-200-1.jpg">
-					</div>
-					<div class="item">
-						<img src="http://lorempixel.com/output/abstract-q-c-300-200-2.jpg">
-					</div>
-					<div class="item">
-						<img src="http://lorempixel.com/output/abstract-q-c-300-200-3.jpg">
-					</div>
-					<div class="item">
-						<img src="http://lorempixel.com/output/abstract-q-c-300-200-4.jpg">
-					</div>
-				</div>		
-				<a class="left carousel-control" href="#carousel-a" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left"></span>
-				</a>
-				<a class="right carousel-control" href="#carousel-a" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right"></span>
-				</a>
+@section('content')
+	<section>
+		<h2 role="heading" aria-level="2">Vidéos</h2>
+		{{--  @TODO : Mettre les bons id vidéos  --}}
+		<div class="youtube_videos">
+			<div class="youtube" id="7X8II6J-6mU"></div>
+			<div class="youtube" id="L0UnpSAD1WY"></div>
+			<div class="youtube" id="RH_V2rtFqYM"></div>
+			<div class="youtube m" id="aVS4W7GZSq0"></div>
+			<div class="youtube" id="CQIqub9HCnk"></div>
+			<div class="youtube" id="vbBKrKSJU4w"></div> 
+			<div class="youtube" id="PnaW5Ptx81I"></div>
+			<div class="youtube" id="Kv9m8jPnXtw"></div>
+		</div>
+		{{--  @TODO : styliser le bouton play : https://codepen.io/ryanfitton/pen/paggdY  --}}
+		{{--  Génération de la miniature manuelle :
+		<div class="youtube_videos">
+			<div class="youtube" id="cZM3UNR3-Mg">
+				<img src="http://lorempixel.com/output/380/250">
 			</div>
-		</section>
-	@endsection
-		{{--  <!-- FIN caroussel -->
-
-		<!-- DÉBUT caroussel 
-		<div id="carousel-id" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#carousel-id" data-slide-to="0" class="active"></li>
-				<li data-target="#carousel-id" data-slide-to="1" class=""></li>
-				<li data-target="#carousel-id" data-slide-to="2" class=""></li>
-			</ol>
-			<div class="carousel-inner">
-				<div class="item active" id="ca-1">
-				</div>
-				<div class="item" id="ca-2">
-				</div>
-				<div class="item" id="ca-3">
-				</div>
-				<style>
-					/* style pour insérer les background OU utiliser jQuery ? */
-				</style>
+			<div class="youtube" id="fsjfEbDxcrc">
+				<img src="http://lorempixel.com/output/381/250">
 			</div>
-			<a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-			<a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-		</div> -->
-		<!-- FIN caroussel -->  --}}
+			<div class="youtube" id="xS_A8bkO8GQ">
+				<img src="http://lorempixel.com/output/382/250">
+			</div>
+			<div class="youtube" id="EmdEhn7Sf40">
+				<img src="http://lorempixel.com/output/383/250">
+			</div>
+			<div class="youtube" id="4NckFt4Bu0Q">
+				<img src="http://lorempixel.com/output/384/250">
+			</div>
+			<div class="youtube" id="JIVkN2KsvGU">
+				<img src="http://lorempixel.com/output/385/250">
+			</div>
+			<div class="youtube" id="XSTGMNMdFac">
+				<img src="http://lorempixel.com/output/386/250">
+			</div>
+			<div class="youtube" id="-ADp-gb92bw">
+				<img src="http://lorempixel.com/output/387/250">
+			</div>
+		</div>  --}}
+	</section>
+@endsection
