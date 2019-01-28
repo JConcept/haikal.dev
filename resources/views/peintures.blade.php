@@ -15,7 +15,7 @@
 						{{--  @TODO : Ajouter les flèches précédent suivant  --}}
 					</header>
 					<section class="modal-body">
-						<img src="/img/peintures/tableau (1).jpg" alt="">
+						<img src="/img/peintures/tableau-1.jpg" alt="">
 						<h3 class="modal-title">Titre @TODO</h3>
 						<p>Petit texte explicatif de la peinture @TODO.</p>
 					</section>
@@ -47,7 +47,7 @@
 										<h3>Titre</h3>
 									</div>		
 								</div>
-								<img src="/img/peintures/tableau (1).jpg" alt="">
+								<img src="/img/peintures/tableau-1.jpg" alt="">
 							</section>
 							<section class="column"  data-toggle="modal" data-target="#myModal" alt="" style="grid-area: span 1 / span 4;">
 								<div class="hover">			
@@ -56,7 +56,7 @@
 										<h3>Titre</h3>
 									</div>		
 								</div>
-								<img src="/img/peintures/tableau (2).jpg" alt="">
+								<img src="/img/peintures/tableau-2.jpg" alt="">
 							</section>
 							<section class="column"  data-toggle="modal" data-target="#myModal" style="grid-area: span 1 / span 2;">
 								<div class="hover">			
@@ -65,7 +65,7 @@
 										<h3>Titre</h3>
 									</div>		
 								</div>
-								<img src="/img/peintures/tableau (3).jpg" alt="">
+								<img src="/img/peintures/tableau-3.jpg" alt="">
 							</section>
 							<section class="column"  data-toggle="modal" data-target="#myModal" style="grid-area: span 1 / span 2;">
 								<div class="hover">			
@@ -74,7 +74,7 @@
 										<h3>Titre</h3>
 									</div>		
 								</div>
-								<img src="/img/peintures/tableau (4).jpg" alt="">
+								<img src="/img/peintures/tableau-4.jpg" alt="">
 							</section>
 							<section class="column"  data-toggle="modal" data-target="#myModal" style="grid-area: span 4 / span 2;">
 								<div class="hover">			
@@ -83,7 +83,7 @@
 										<h3>Titre</h3>
 									</div>		
 								</div>
-								<img src="/img/peintures/tableau (9).jpg" alt="">
+								<img src="/img/peintures/tableau-9.jpg" alt="">
 							</section>
 							<section class="column"  data-toggle="modal" data-target="#myModal" style="grid-area: span 1 / span 2;">
 								<div class="hover">			
@@ -92,7 +92,7 @@
 										<h3>Titre</h3>
 									</div>		
 								</div>
-								<img src="/img/peintures/tableau (5).jpg" alt="">
+								<img src="/img/peintures/tableau-5.jpg" alt="">
 							</section>
 							<section class="column"  data-toggle="modal" data-target="#myModal" style="grid-area: span 1 / span 3;">
 								<div class="hover">			
@@ -101,7 +101,7 @@
 										<h3>Titre</h3>
 									</div>		
 								</div>
-								<img src="/img/peintures/tableau (6).jpg" alt="">
+								<img src="/img/peintures/tableau-6.jpg" alt="">
 							</section>
 							<section class="column"  data-toggle="modal" data-target="#myModal" style="grid-area: span 1 / span 3;">
 								<div class="hover">			
@@ -110,7 +110,7 @@
 										<h3>Titre</h3>
 									</div>		
 								</div>
-								<img src="/img/peintures/tableau (7).jpg" alt="">
+								<img src="/img/peintures/tableau-7.jpg" alt="">
 							</section>
 							<section class="column"  data-toggle="modal" data-target="#myModal" style="grid-area: span 1 / span 2;">
 								<div class="hover">			
@@ -119,7 +119,7 @@
 										<h3>Titre</h3>
 									</div>		
 								</div>
-								<img src="/img/peintures/tableau (8).jpg" alt="">
+								<img src="/img/peintures/tableau-8.jpg" alt="">
 							</section>							
 							<section class="column"  data-toggle="modal" data-target="#myModal" style="grid-area: span 1 / span 2;">
 								<div class="hover">			
@@ -128,7 +128,7 @@
 										<h3>Titre</h3>
 									</div>		
 								</div>
-								<img src="/img/peintures/tableau (10).jpg" alt="">
+								<img src="/img/peintures/tableau-10.jpg" alt="">
 							</section>
 							<section class="column"  data-toggle="modal" data-target="#myModal" style="grid-area: span 1 / span 2;">
 								<div class="hover">			
@@ -137,7 +137,7 @@
 										<h3>Titre</h3>
 									</div>		
 								</div>
-								<img src="/img/peintures/tableau (11).jpg" alt="">
+								<img src="/img/peintures/tableau-11.jpg" alt="">
 							</section>
 							<section class="column"  data-toggle="modal" data-target="#myModal" style="grid-area: span 2 / span 1;">
 								<div class="hover">			
@@ -146,7 +146,7 @@
 										<h3>Titre</h3>
 									</div>		
 								</div>
-								<img src="/img/peintures/tableau (12).jpg" alt="">
+								<img src="/img/peintures/tableau-12.jpg" alt="">
 							</section>
 						</div>
 					</div>

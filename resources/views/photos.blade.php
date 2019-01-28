@@ -50,31 +50,31 @@
 											<div class="item" id="ca-9"></div>
 											<style>
 												#carousel1 #ca-1{
-													background: url("{{ url('img/couleurs/cramignons (1).jpg') }}") no-repeat center;
+													background: url("{{ url('img/couleurs/cramignons-1.jpg') }}") no-repeat center;
 												}
 												#carousel1 #ca-2{
-													background: url("{{ url('img/couleurs/cramignons (2).jpg') }}") no-repeat center;
+													background: url("{{ url('img/couleurs/cramignons-2.jpg') }}") no-repeat center;
 												}
 												#carousel1 #ca-3{
-													background: url("{{ url('img/couleurs/cramignons (3).jpg') }}") no-repeat center;
+													background: url("{{ url('img/couleurs/cramignons-3.jpg') }}") no-repeat center;
 												}
 												#carousel1 #ca-4{
-													background: url("{{ url('img/couleurs/cramignons (4).jpg') }}") no-repeat center;
+													background: url("{{ url('img/couleurs/cramignons-4.jpg') }}") no-repeat center;
 												}
 												#carousel1 #ca-5{
-													background: url("{{ url('img/couleurs/cramignons (5).jpg') }}") no-repeat center;
+													background: url("{{ url('img/couleurs/cramignons-5.jpg') }}") no-repeat center;
 												}
 												#carousel1 #ca-6{
-													background: url("{{ url('img/couleurs/cramignons (6).jpg') }}") no-repeat center;
+													background: url("{{ url('img/couleurs/cramignons-6.jpg') }}") no-repeat center;
 												}
 												#carousel1 #ca-7{
-													background: url("{{ url('img/couleurs/cramignons (7).jpg') }}") no-repeat center;
+													background: url("{{ url('img/couleurs/cramignons-7.jpg') }}") no-repeat center;
 												}
 												#carousel1 #ca-8{
-													background: url("{{ url('img/couleurs/cramignons (8).jpg') }}") no-repeat center;
+													background: url("{{ url('img/couleurs/cramignons-8.jpg') }}") no-repeat center;
 												}
 												#carousel1 #ca-9{
-													background: url("{{ url('img/couleurs/cramignons (9).jpg') }}") no-repeat center;
+													background: url("{{ url('img/couleurs/cramignons-9.jpg') }}") no-repeat center;
 												}
 											</style>
 										</div>
@@ -107,22 +107,22 @@
 											<div class="item" id="ca-6"></div>
 											<style>
 												#carousel2 #ca-1{
-													background: url('/img/couleurs/livres (1).jpg') no-repeat center;
+													background: url('/img/couleurs/livres-1.jpg') no-repeat center;
 												}
 												#carousel2 #ca-2{
-													background: url('/img/couleurs/livres (2).jpg') no-repeat center;
+													background: url('/img/couleurs/livres-2.jpg') no-repeat center;
 												}
 												#carousel2 #ca-3{
-													background: url('/img/couleurs/livres (3).jpg') no-repeat center;
+													background: url('/img/couleurs/livres-3.jpg') no-repeat center;
 												}
 												#carousel2 #ca-4{
-													background: url('/img/couleurs/livres (4).jpg') no-repeat center;
+													background: url('/img/couleurs/livres-4.jpg') no-repeat center;
 												}
 												#carousel2 #ca-5{
-													background: url('/img/couleurs/livres (5).jpg') no-repeat center;
+													background: url('/img/couleurs/livres-5.jpg') no-repeat center;
 												}
 												#carousel2 #ca-6{
-													background: url('/img/couleurs/livres (6).jpg') no-repeat center;
+													background: url('/img/couleurs/livres-6.jpg') no-repeat center;
 												}
 											</style>
 										</div>
@@ -232,19 +232,19 @@
 											</div>
 											<style>
 												#carousel5 #ca-1{
-													background: url('/img/noir-blanc/la-rue/la-rue (1).jpg') no-repeat center;
+													background: url('/img/noir-blanc/la-rue/la-rue-1.jpg') no-repeat center;
 												}
 												#carousel5 #ca-2{
-													background: url('/img/noir-blanc/la-rue/la-rue (2).jpg') no-repeat center;
+													background: url('/img/noir-blanc/la-rue/la-rue-2.jpg') no-repeat center;
 												}
 												#carousel5 #ca-3{
-													background: url('/img/noir-blanc/la-rue/la-rue (3).jpg') no-repeat center;
+													background: url('/img/noir-blanc/la-rue/la-rue-3.jpg') no-repeat center;
 												}
 												#carousel5 #ca-4{
-													background: url('/img/noir-blanc/la-rue/la-rue (4).jpg') no-repeat center;
+													background: url('/img/noir-blanc/la-rue/la-rue-4.jpg') no-repeat center;
 												}
 												#carousel5 #ca-5{
-													background: url('/img/noir-blanc/la-rue/la-rue (5).jpg') no-repeat center;
+													background: url('/img/noir-blanc/la-rue/la-rue-5.jpg') no-repeat center;
 												}
 											</style>
 										</div>
