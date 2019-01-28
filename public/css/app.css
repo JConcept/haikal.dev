@@ -6871,19 +6871,19 @@ a.callToAction {
   stop-color: #EF5350;
 }
 
-.linkedIn .a {
+.linkedIn-icon .a {
   fill: #5883a0;
 }
 
-.youtube .a {
+.youtube-icon .a {
   fill: #FF0000;
 }
 
-a:hover .linkedIn .a {
+a:hover .linkedIn-icon .a {
   fill: #46687f;
 }
 
-a:hover .youtube .a {
+a:hover .youtube-icon .a {
   fill: #cc0000;
 }
 
