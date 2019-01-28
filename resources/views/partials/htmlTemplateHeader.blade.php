@@ -7,4 +7,5 @@
 	<link rel="stylesheet" href="{{ url('css/app.css') }}">
 	<title>{{$title}} - Nelly Haikal</title>
 	<link rel="icon" type="image/png" href="/img/favicon.png">
+	<meta name="robots" content="noindex, nofollow">
 </head>
